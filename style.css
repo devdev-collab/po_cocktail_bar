@@ -121,7 +121,7 @@ body {
 }
 
     .page title {
-        text-align: center;
+        align-items: center;
     }
 
     .page h1{
