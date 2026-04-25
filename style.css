@@ -114,17 +114,23 @@ html {
         );
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 body {
     text-align: center;
     font-family: var(--font-body);
     color: white;
 }
+
+    .page h1{
+        text-align: center;
+        font-size: 35pt;
+        color: white;
+    }
+
+    .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
 
     header {
         display: block;
