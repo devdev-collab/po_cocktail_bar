@@ -120,17 +120,6 @@ body {
     color: white;
 }
 
-    .main-title {
-        align-items: center;
-        text-align: center;
-    }
-
-    .main-title h1{
-        font-family: var(--font-header);
-        font-size: 35pt;
-        color: white;
-    }
-
     .container {
     width: 90%;
     max-width: 1200px;
