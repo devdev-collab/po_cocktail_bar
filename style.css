@@ -205,6 +205,7 @@ header {
         column-gap: 20px;
         row-gap: 10px;
         align-items: start;
+        background-color: var(--viole);
     }
 
     .address-wrapper img {
@@ -219,7 +220,6 @@ header {
     #address-content {
         grid-column: 2;
         grid-row: 1;
-        background-color: var(--viole);
         padding: 20px;
         color: white;
         display: flex;
@@ -243,7 +243,7 @@ header {
         grid-row: 2;
         justify-self: start;
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px 10px 10px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
