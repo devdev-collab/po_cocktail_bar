@@ -228,6 +228,8 @@ body {
         color: white;
         text-decoration: none;
         border-radius: 5px;
+        font-size: 27pt;
+        font-family: var(--font-body);
     }
 
     #reservation-address a:hover {
