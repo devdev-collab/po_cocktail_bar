@@ -191,51 +191,58 @@ header {
     }
             /* ----------ADDRESS----------*/
 .address {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    color: white;
+    width: 100%;
+    background-color: var(--viole);
+    padding: 30px 0;
 }
-    .address img {
+
+    .address-wrapper {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .address-wrapper img {
         width: 300px;
         height: 300px;
         object-fit: cover;
         border-radius: 50%;
-        background-color: var(--viole);
+        flex-shrink: 0;
     }
 
-    #reservation-address {
+    #address-content {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        background-color: var(--viole);
-        padding: 20px;
-        flex: 1;
+        color: white;
     }
 
-    #reservation-address h2 {
-        font-size: 27pt;
-        font-family: var(--font-header);
-    }
+        #address-content h2 {
+            font-size: 27pt;
+            font-family: var(--font-header);
+        }
 
-    #reservation-address p {
-        font-size: 12pt;
-        font-family: var(--font-body);
-    }
+        #address-content p {
+            font-size: 12pt;
+            font-family: var(--font-body);
+        }
 
-    .address a {
+    .address-wrapper a {
+        align-self: flex-start;
         padding: 10px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
         border-radius: 5px;
         font-size: 16pt;
-        white-space: nowrap; /* prevents wrapping */
     }
 
-
-    .address a a:hover {
+    .address-wrapper a:hover {
         background-color: var(--lanumoli);
     }
 
