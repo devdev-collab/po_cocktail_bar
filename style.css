@@ -202,7 +202,6 @@ header {
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-between; /* pushes button to right */
         gap: 20px;
     }
 
@@ -233,14 +232,14 @@ header {
         }
 
     .address-wrapper a {
+        display: inline-block;
+        margin-top: 10px;
         padding: 10px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
         border-radius: 5px;
         font-size: 16pt;
-
-        white-space: nowrap;
     }
 
     .address-wrapper a:hover {
