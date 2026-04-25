@@ -188,7 +188,41 @@ body {
         color: white;
     }
             /* ----------ADDRESS----------*/
+#reservation-address {
+    text-align: center;
+}
 
+    #reservation-address img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;   /* keeps image from stretching */
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    #reservation-address h2 {
+        margin: 10px 0;
+    }
+
+    #reservation-address p {
+        margin: 5px 0;
+    }
+
+    #reservation-address a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    #reservation-address a:hover {
+        background-color: #555;
+    }
 
             /* ----------BOOKING----------*/
 
