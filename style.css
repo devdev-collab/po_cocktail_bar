@@ -225,6 +225,7 @@ header {
         flex-direction: column;
         grid-row: 1 / -1;
         gap: 8px;
+        padding: 20px;
     }
 
     #address-content h2 {
@@ -242,7 +243,7 @@ header {
         grid-row: 2;
         justify-self: start;
         display: inline-block;
-        padding: 20px 10px 20px 30px;
+        padding: 10px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
