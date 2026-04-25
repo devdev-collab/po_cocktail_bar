@@ -118,7 +118,12 @@ body {
     font-family: var(--font-body);
 }
 
-
+    header {
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-family: var(--font-header);
+    }
 
         .title {
             display: grid;
@@ -158,7 +163,7 @@ header {
     padding: 0;
     margin: 0;
     font-family: var(--font-header);
-    background: linear-gradient(to bottom, var(--viole), var(--uliuli));
+    background-color: linear-gradient(to bottom, var(--viole), var(--uliuli));
  }
 
 
