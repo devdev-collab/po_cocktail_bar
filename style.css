@@ -228,6 +228,16 @@ header {
         gap: 8px;
     }
 
+    #address-content h2 {
+        font-size: 27pt;
+        font-family: var(--font-header);
+    }
+
+    #address-content p {
+        font-size: 12pt;
+        font-family: var(--font-body);
+    }
+
     .address-wrapper a {
         grid-column: 2;
         grid-row: 2;
