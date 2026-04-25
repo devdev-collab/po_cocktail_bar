@@ -105,6 +105,8 @@ table {
             
 html {
     min-width: 400px;
+    color: white;
+    background: linear-gradient(to bottom, var(--viole), var(--uliuli));
 }
 
 .container {
@@ -116,8 +118,6 @@ html {
 body {
     text-align: center;
     font-family: var(--font-body);
-    color: white;
-    background: linear-gradient(to bottom, var(--viole), var(--uliuli));
 }
 
     header {
