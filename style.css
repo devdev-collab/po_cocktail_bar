@@ -490,4 +490,16 @@ header {
         padding: 0;
         margin: 0;
     }
+
+     #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
 }
