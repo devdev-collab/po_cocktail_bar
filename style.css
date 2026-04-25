@@ -190,6 +190,10 @@ body {
             /* ----------ADDRESS----------*/
 #reservation-address {
     text-align: center;
+    background-color: var(--viole);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
     #reservation-address img {
@@ -213,7 +217,7 @@ body {
         display: inline-block;
         margin-top: 15px;
         padding: 10px 20px;
-        background-color: #333;
+        background-color: var(--samasama);
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
