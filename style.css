@@ -1,18 +1,27 @@
+/* ==================================================
+                    CSS INFO
+================================================== */
 /* ----------CSS BY ANGELA ROQUE---------- */
 /* GIT 450-550: CREATIVE TEAM AND PROCESS WORKFLOW */
 /* MODULE 5: 5.6 REVISIONS ROUND2 */
 /* For educational purposes only. */
 
-/* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+
+
+/* ==================================================
+                    IMPORTS
+================================================== */
 @import url("https://use.typekit.net/bbc3lgt.css");
 
-/* ----------CSS RESET---------- */
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
 
+
+/* ==================================================
+                    CSS RESET
+================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,27 +31,50 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;  
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* ----------ROOT VARIABLES---------- */
+
+
+/* ==================================================
+                    ROOT VARIABLES
+================================================== */
 
 :root {
-/*COLOR*/
+
+/*----------COLOR----------*/
     --samasama: #F7931E;
 	--lanumoli: #F15A24;
 	--efuefu: #534741;
@@ -50,9 +82,11 @@ footer, header, hgroup, menu, nav, section {
 	--uliuli: #000000;
 	--enaena: #998675;
 	--lanumumu: #C93E3E;
-/*FONTS*/
-    --font-header: inter bold, roboto regular;
-    --font-body: roboto regular, open sans regular;
+
+/*----------FONTS----------*/
+    --font-header: "Inter", "Roboto";
+    --font-body: "Roboto", "Open Sans", sans-serif;
+
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
     Headers		        Inter Bold
 	Menu Descriptions	Roboto regular 12pt
@@ -64,8 +98,10 @@ footer, header, hgroup, menu, nav, section {
 
 
 
-                                        /* ----------GLOBAL STYLES ---------- */
-            /*----------(MOBILE FIRST (SMALL) applies to the whole page)----------*/
+/* ==================================================
+                    GLOBAL STYLES
+================================================== */
+            
 html {
     min-width: 400px;
 }
@@ -78,6 +114,11 @@ html {
 
 
 
+/* ==================================================
+                    COMPONENTS
+================================================== */
+
+/* ----------BOOKING FORM----------*/
 .booking-form {
   display: flex;
   gap: 15px;
@@ -96,14 +137,20 @@ html {
   min-width: 140px;
 }
 
+
+
+/* ==================================================
+                    MEDIA STYLES
+================================================== */
+
+/*----------(MOBILE FIRST (SMALL QUERIES) applies to the whole page)----------*/
+
 @media (max-width: 800px) {
   .booking-form {
     flex-direction: column;
     align-items: stretch;
   }
 }
-
-
 
 
 
