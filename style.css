@@ -109,7 +109,7 @@ html {
         to bottom, 
         var(--viole) 0%,
         var(--viole) 25%, 
-        var(--uliuli) 50%,
+        var(--uliuli) 75%,
         var(--uliuli) 100%
         );
 }
@@ -203,6 +203,7 @@ header {
         height: 120px;
         object-fit: cover;
         border-radius: 50%;
+        background-color: var(--viole);
     }
 
     #reservation-address {
@@ -211,7 +212,6 @@ header {
         gap: 8px;
         background-color: var(--viole);
         padding: 20px;
-        border-radius: 10px;
         flex: 1;
     }
 
