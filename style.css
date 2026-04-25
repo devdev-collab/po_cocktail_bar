@@ -225,7 +225,7 @@ header {
         flex-direction: column;
         grid-row: 1 / -1;
         gap: 8px;
-        padding: 10px;
+        padding: 30px;
     }
 
     #address-content h2 {
