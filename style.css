@@ -105,14 +105,6 @@ table {
             
 html {
     min-width: 400px;
-    color: white;
-    background: linear-gradient(
-        to bottom, 
-        var(--viole) 0%,
-        var(--viole) 25%, 
-        var(--uliuli) 25%,
-        var(--uliuli) 100%
-        );
 }
 
 .container {
@@ -124,6 +116,14 @@ html {
 body {
     text-align: center;
     font-family: var(--font-body);
+    color: white;
+    background: linear-gradient(
+        to bottom, 
+        var(--viole) 0%,
+        var(--viole) 25%, 
+        var(--uliuli) 25%,
+        var(--uliuli) 100%
+        );
 }
 
     header {
