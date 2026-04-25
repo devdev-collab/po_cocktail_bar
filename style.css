@@ -171,6 +171,9 @@ body {
     position: relative;
     padding-right: 20px;
     text-align: center;
+    font-size: 16pt;
+    font-family: var(--font-header);
+    color: white;
 }
 
     .navigation ul {
