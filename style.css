@@ -192,8 +192,6 @@ body {
         display: block;
         padding: 10px 30px;
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
         color: var(--blue);
         transition: background-color 0.5s;
     }
@@ -241,7 +239,6 @@ body {
     .dropdown-nav a {
         display: block;
         padding: 10px 0;
-        text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
         color: var(--blue);
@@ -452,7 +449,6 @@ header {
             color: var(--blue);
             text-decoration: none;
             font-weight: bold;
-            text-transform: uppercase;
         }
 
         .navigation label {
