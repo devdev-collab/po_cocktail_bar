@@ -220,7 +220,6 @@ header {
     #address-content {
         grid-column: 2;
         grid-row: 1;
-        padding: 20px;
         color: white;
         display: flex;
         flex-direction: column;
@@ -243,7 +242,7 @@ header {
         grid-row: 2;
         justify-self: start;
         display: inline-block;
-        padding: 10px 10px 10px 20px;
+        padding: 20px 10px 20px 30px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
