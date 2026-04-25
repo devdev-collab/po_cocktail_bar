@@ -177,12 +177,12 @@ body {
 .main-title {
         align-items: center;
         text-align: center;
-    }
-
-    .main-title h1{
         display: block;
         padding: 0;
         margin: 0;
+    }
+
+    .main-title h1{
         font-family: var(--font-header);
         font-size: 35pt;
         color: white;
