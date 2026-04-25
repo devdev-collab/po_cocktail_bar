@@ -214,8 +214,8 @@ body {
         display: inline-block;
         margin-top: 10px;
         padding: 8px 16px;
-        background-color: white;
-        color: purple;
+        background-color: var(--samasama);
+        color: white;
         text-decoration: none;
         border-radius: 5px;
     }
