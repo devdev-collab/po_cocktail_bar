@@ -193,7 +193,6 @@ header {
 .address {
     width: 100%;
     padding: 30px 0;
-    background-color: var(--viole);
 }
 
     .address-wrapper {
@@ -219,6 +218,7 @@ header {
         gap: 8px;
         flex: 1;
         color: white; 
+        background-color: var(--viole);
     }
 
         #address-content h2 {
