@@ -164,17 +164,29 @@ body {
 ================================================== */
 
 /* ----------HEADER----------*/
-h1 {
-    display: block;
-    padding: 0;
-    margin: 0;
-    font-family: var(--font-header);
- }
 
 
-/* ----------ADDRESS----------*/
-.address {
-}
+/* ----------MAIN----------*/
+
+            /* ----------MAIN-TITLE----------*/
+.main-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-title h1{
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-family: var(--font-header);
+        font-size: 35pt;
+        color: white;
+    }
+            /* ----------ADDRESS----------*/
+
+
+            /* ----------BOOKING----------*/
+
 
 
 /* ----------BOOKING FORM----------*/
