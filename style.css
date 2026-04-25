@@ -64,14 +64,17 @@ footer, header, hgroup, menu, nav, section {
 
 
 
+                                        /* ----------GLOBAL STYLES ---------- */
+            /*----------(MOBILE FIRST (SMALL) applies to the whole page)----------*/
+html {
+    min-width: 400px;
+}
 
-
-
-
-
-
-
-
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 
@@ -93,14 +96,35 @@ footer, header, hgroup, menu, nav, section {
   min-width: 140px;
 }
 
-
-
-
-
-
 @media (max-width: 800px) {
   .booking-form {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+
+
+
+
+
+            /* ----------MEDIA QUERIES (MEDIUM)---------- */
+@media screen and (min-width: 600px){
+    .page {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
+
+
+            /* ----------MEDIA QUERIES (LARGE)---------- */
+@media screen and (min-width: 900px){
+    .page {
+        min-width: 400px;
+        padding: 0;
+        margin: 0;
+    }
 }
