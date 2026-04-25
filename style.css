@@ -435,6 +435,48 @@ header {
         padding: 0;
         margin: 0;
     }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0 30px;
+    }
+
+        .navigation li {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navigation label {
+            display: none;
+        }
+
+        .navigation a:hover {
+            background-color: var(--blue);
+            color: var(--black)
+        }
+
+        #hamburger, .navigation label {
+            display: none;
+        }
+
+        .dropdown-nav {
+            display: flex !important;
+            position: static;
+            flex-direction: row;
+            background: none;
+            width: auto;
+        }
 }
 
 
