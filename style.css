@@ -169,7 +169,9 @@ body {
 ================================================== */
 
 /* ----------HEADER----------*/
-
+header {
+    background: none;
+}
 
 /* ----------MAIN----------*/
 
@@ -192,7 +194,6 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: var(--viole);
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -208,6 +209,10 @@ body {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        background-color: var(--viole);
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
     }
 
     #reservation-address h2 {
