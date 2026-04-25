@@ -210,6 +210,11 @@ body {
         gap: 8px;
     }
 
+    #reservation-address p {
+        font-size: 27pt;
+        font-family: var(--font-header);
+    }
+
     #reservation-address a {
         display: inline-block;
         margin-top: 10px;
