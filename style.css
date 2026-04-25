@@ -188,44 +188,40 @@ body {
         color: white;
     }
             /* ----------ADDRESS----------*/
-#reservation-address {
-    text-align: center;
+.address {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     background-color: var(--viole);
     padding: 20px;
-    text-align: center;
     border-radius: 10px;
+    color: white;
 }
-
-    #reservation-address img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;   /* keeps image from stretching */
+    .address img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
         border-radius: 50%;
-        display: block;
-        margin: 0 auto 15px;
     }
 
-    #reservation-address h2 {
-        margin: 10px 0;
-    }
-
-    #reservation-address p {
-        margin: 5px 0;
+    #reservation-address {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     #reservation-address a {
         display: inline-block;
-        margin-top: 15px;
-        padding: 10px 20px;
-        background-color: var(--samasama);
-        color: #fff;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: white;
+        color: purple;
         text-decoration: none;
         border-radius: 5px;
-        transition: background 0.3s ease;
     }
 
     #reservation-address a:hover {
-        background-color: #555;
+        background-color: var(--lanumoli);
     }
 
             /* ----------BOOKING----------*/
