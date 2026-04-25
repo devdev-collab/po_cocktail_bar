@@ -419,12 +419,7 @@ header {
 
 /*----------(MOBILE FIRST (SMALL QUERIES) applies to the whole page)----------*/
 
-@media (max-width: 800px) {
-  .booking-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
+
 
 
 
