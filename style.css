@@ -117,7 +117,7 @@ body {
     text-align: center;
     font-family: var(--font-body);
     color: white;
-    background-color: linear-gradient(to bottom, var(--viole), var(--uliuli));
+    background: linear-gradient(to bottom, var(--viole), var(--uliuli));
 }
 
     header {
