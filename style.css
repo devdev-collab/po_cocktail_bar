@@ -224,6 +224,7 @@ header {
         color: white;
         display: flex;
         flex-direction: column;
+        grid-row: 1 / -1;
         gap: 8px;
     }
 
