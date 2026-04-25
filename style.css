@@ -108,8 +108,8 @@ html {
     background: linear-gradient(
         to bottom, 
         var(--viole) 0%,
-        var(--viole) 25%, 
-        var(--uliuli) 75%,
+        var(--uliuli) 25%, 
+        var(--uliuli) 50%,
         var(--uliuli) 100%
         );
 }
