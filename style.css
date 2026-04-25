@@ -255,7 +255,20 @@ header {
     }
 
             /* ----------BOOKING----------*/
+.booking {
+    color: white;
+}
+            
+.booking h3 {
+    font-size: 16pt;
+    font-family: var(--font-header);
+    text-align: center;
+}
 
+.booking p {
+    font-size: 12pt;
+    font-family: var(--font-body);
+}
 
 
 /* ----------BOOKING FORM----------*/
