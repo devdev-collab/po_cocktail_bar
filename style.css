@@ -195,7 +195,6 @@ header {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    border-radius: 10px;
     color: white;
 }
     .address img {
@@ -225,19 +224,18 @@ header {
         font-family: var(--font-body);
     }
 
-    #reservation-address a {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 8px 16px;
+    .address a {
+        padding: 10px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
         border-radius: 5px;
         font-size: 16pt;
-        font-family: var(--font-body);
+        white-space: nowrap; /* prevents wrapping */
     }
 
-    #reservation-address a:hover {
+
+    .address a a:hover {
         background-color: var(--lanumoli);
     }
 
