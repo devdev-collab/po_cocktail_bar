@@ -224,6 +224,7 @@ header {
         flex-direction: column;
         gap: 8px;
         padding: 30px;
+        background-color: var(--viole);
     }
 
     #address-content h2 {
