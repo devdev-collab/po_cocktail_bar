@@ -88,9 +88,10 @@ table {
     --font-body: "Roboto", "Open Sans", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
-    Headers		        Inter Bold
-	Menu Descriptions	Roboto regular 12pt
-	Online Menu		    Roboto regular 16pt
+    Title                               35pt
+    Headers		        Inter Bold      27pt
+	Menu Descriptions	Roboto regular  12pt
+	Online Menu		    Roboto regular  16pt
 */
 }
 
@@ -147,10 +148,15 @@ body {
                     font-size: 35pt;
                 }
 
+                .logo-and-title p {
+                    font-size: var(--font-body);
+                }
+
 
 /* ==================================================
-                    COMPONENTS
+                    RESERVATION PAGE COMPONENTS
 ================================================== */
+
 
 /* ----------BOOKING FORM----------*/
 .booking-form {
