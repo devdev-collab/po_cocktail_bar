@@ -163,6 +163,124 @@ body {
                     font-size: var(--font-body);
                 }
 
+/*----------NAV----------*/
+
+.navigation {
+    font-size: 20px;
+    justify-self: end;
+    position: relative;
+    padding-right: 20px;
+    text-align: center;
+}
+
+    .navigation ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .navigation li {
+        list-style: none;
+        padding: 5px 20px;
+    }
+
+    .navigation a, .navigation a:visited, .navigation a:active {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--blue);
+        transition: background-color 0.5s;
+    }
+
+    .navigation li:hover, .navigation a:hover {
+        color: var(--black);
+        background-color: var(--blue);
+    }
+
+#hamburger {
+    display: none;
+}
+
+    .navigation label {
+        display: block;
+        order: 2;
+        cursor: pointer;
+        margin-right: 10px;
+        z-index: 101;
+        position: relative;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .dropdown-nav {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        padding: 20px 0;
+        z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .dropdown-nav a {
+        display: block;
+        padding: 10px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    #hamburger:checked ~ .dropdown-nav {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        background-color: var(--black);
+    }
+
+    label span {
+        background-color: white;
+        display: block;
+        height: .25rem;
+        position: relative;
+        transition: background-color .3s ease-out;
+        width: 2rem;
+    }
+
+    label span:before, label span:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    label span:before {
+        top: .75rem;
+        left: 0;
+    }
+
+    label span:after {
+        top: -.75rem;
+        left: 0;
+    }
+
 
 /* ==================================================
                     RESERVATION PAGE COMPONENTS
