@@ -122,6 +122,7 @@ body {
 
     .page title {
         align-items: center;
+        text-align: center;
     }
 
     .page h1{
