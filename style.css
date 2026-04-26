@@ -335,26 +335,18 @@ footer {
         align-items: flex-start;
     }
 
-    .footer-contact {
-        grid-column: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .footer-social h2,
-    .footer-contact h2 {
+    .footer-social h2 {
         margin-top: 0;
         font-size: 16pt;
         text-align: left;
     }
 
-    .footer-social p,
-    .footer-contact p {
+    .footer-social p {
         margin: 5px 0;
     }
 
-    .footer-address, .footer-social, .footer-social {
+    .footer-address, .footer-social {
         display: block;
         text-align: left;
         max-width: 100%;
