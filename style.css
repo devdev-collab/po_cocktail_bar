@@ -300,6 +300,11 @@ footer {
         font-size: 12pt;
     }
 
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+
     .footer-address {
         grid-column: 1;
     }
@@ -333,9 +338,6 @@ footer {
         margin: 5px 0;
     }
 
-    .footer-social a {
-        text-decoration: none;
-    }
 
     .footer-social a:hover {
         color: #f39c12;
