@@ -390,21 +390,27 @@ header {
 
 /* ----------BOOKING FORM----------*/
 .booking-form {
-  display: flex;
-  gap: 15px;
-  align-items: flex-end;
-  flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
+.booking-form button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 10px 30px;
+    background-color: var(--samasama);
+    border: none;
+    color: white;
+    font-size: 16pt;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .field input,
 .field select {
-  padding: 8px;
-  min-width: 140px;
+    width: 100%;
 }
 
 
