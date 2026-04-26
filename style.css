@@ -349,6 +349,10 @@ footer {
         margin: 5px 0;
     }
 
+    .footer-address, .footer-social, .footer-social {
+        display: block;
+        text-align: left;
+    }
 
     .footer a:hover {
         color: #f39c12;
