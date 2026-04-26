@@ -374,6 +374,7 @@ header {
 .booking {
     color: white;
     padding: 30px;
+    overflow-x: hidden;
 }
             
 .booking h3 {
@@ -395,12 +396,15 @@ header {
     gap: 12px;
     justify-content: center;
     align-items: flex-end;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .field {
-    position: relative;
-    flex: 1 1 140px;
     min-width: 120px;
+    flex: 1 1 160px;
+    min-width: 160px;
+    box-sizing: border-box;
 }
 
 .field input,
