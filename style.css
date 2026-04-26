@@ -311,6 +311,7 @@ footer {
 
     .footer-address h3 {
         font-size: 12pt;
+        font-weight: bold;
     }
 
     .footer-social {
