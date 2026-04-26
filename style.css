@@ -377,7 +377,7 @@ header {
 }
             
 .booking h3 {
-    font-size: 27pt;
+    font-size: 16pt;
     font-family: var(--font-header);
     text-align: center;
 }
@@ -415,18 +415,12 @@ header {
 }
             
 .footer h2 {
-    font-size: 27pt;
-    font-family: var(--font-header);
-    text-align: center;
-}
-
-.footer h2 {
     font-size: 16pt;
     font-family: var(--font-header);
     text-align: center;
 }
 
-.booking p {
+.footer p {
     font-size: 12pt;
     font-family: var(--font-body);
 }
