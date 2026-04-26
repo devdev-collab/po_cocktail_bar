@@ -121,10 +121,10 @@ body {
 }
 
     .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    line-height: 1.5;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        line-height: 1.5;
     }
 
     header {
@@ -292,7 +292,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        max-width: 1200px;
+        max-width: 100%;
         margin: 20px auto;
         padding: auto;
     }
