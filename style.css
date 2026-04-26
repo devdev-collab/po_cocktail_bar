@@ -409,14 +409,12 @@ header {
     cursor: pointer;
 }
 
-.field label{
-    background-color: var(--viole);
-    color: white;
-}
 
 .field input,
 .field select {
     width: 100%;
+    background-color: var(--viole);
+    color: white;
 }
 
 
