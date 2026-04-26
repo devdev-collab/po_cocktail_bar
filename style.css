@@ -401,7 +401,6 @@ header {
 }
 
 .field {
-    min-width: 120px;
     flex: 1 1 160px;
     min-width: 160px;
     box-sizing: border-box;
