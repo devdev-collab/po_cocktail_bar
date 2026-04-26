@@ -352,6 +352,8 @@ footer {
     .footer-address, .footer-social, .footer-social {
         display: block;
         text-align: left;
+        max-width: 100%;
+        overflow: hidden;
         padding: 0;
         margin: 0;
     }
