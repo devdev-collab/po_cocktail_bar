@@ -321,7 +321,7 @@ footer {
     }
 
     .footer-address {
-        grid-column: 1 / span 2;
+        grid-column: 1;
         display: flex;
         justify-content: center;
         align-items: center;
