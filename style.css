@@ -310,6 +310,10 @@ footer {
         grid-column: 1;
     }
 
+    .footer-address h2 {
+        text-align: left;
+    }
+
     .footer-address h3 {
         font-size: 12pt;
     }
