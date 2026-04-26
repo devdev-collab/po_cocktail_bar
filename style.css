@@ -403,11 +403,13 @@ header {
     flex: 1 1 160px;
     min-width: 160px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .field input,
 .field select {
     width: 100%;
+    box-sizing: border-box;
     background-color: var(--viole);
     color: white;
     border: 1px solid var(--viole);
