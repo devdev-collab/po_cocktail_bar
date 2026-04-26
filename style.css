@@ -282,7 +282,7 @@ body {
 
 /*----------FOOTER----------*/
 footer {
-    padding: 20px;
+    padding: 20px auto;
     margin: 0;
     text-align: left;
     align-items: left;
