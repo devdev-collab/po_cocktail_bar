@@ -282,7 +282,7 @@ body {
 
 /*----------FOOTER----------*/
 footer {
-    background-color: #333;
+    background-color: var(--efuefu);
     color: white;
     padding: 30px 0;
     text-align: left;
@@ -336,6 +336,7 @@ footer {
     .footer-contact h2 {
         margin-top: 0;
         font-size: 16pt;
+        text-align: left;
     }
 
     .footer-social p,
