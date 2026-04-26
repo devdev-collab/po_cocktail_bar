@@ -239,7 +239,6 @@ body {
         display: block;
         padding: 10px 0;
         text-decoration: none;
-        font-weight: bold;
         color: var(--blue);
         text-align: center;
     }
