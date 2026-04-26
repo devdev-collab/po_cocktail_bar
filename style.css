@@ -292,7 +292,7 @@ footer {
     .footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-gap: 30px;
         max-width: 100%;
         margin: 20px auto;
         padding: auto;
@@ -321,7 +321,11 @@ footer {
     }
 
     .footer-address {
-        grid-column: 1;
+        grid-column: 1 / span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-social {
