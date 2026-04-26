@@ -286,6 +286,7 @@ footer {
     color: white;
     padding: 30px 0;
     text-align: left;
+    align-items: left;
 }
 
     .footer {
