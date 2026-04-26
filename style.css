@@ -546,7 +546,6 @@ header {
 .footer h2 {
     font-size: 16pt;
     font-family: var(--font-header);
-    text-align: center;
 }
 
 .footer p {
