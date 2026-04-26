@@ -314,11 +314,12 @@ footer {
     .footer p {
         font-size: 12pt;
         font-family: var(--font-body);
+        color: var(--enaena);
     }
 
     .footer a {
         text-decoration: none;
-        color: white;
+        color: var(--enaena);
     }
 
     .footer-address {
