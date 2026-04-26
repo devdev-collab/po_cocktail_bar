@@ -118,7 +118,6 @@ body {
     text-align: center;
     font-family: var(--font-body);
     color: white;
-    overflow-x: hidden;
 }
 
     .container {
