@@ -124,7 +124,7 @@ body {
     .container {
         width: 100%;
         max-width: 1000px;
-        padding: 0 20px;
+        padding: 0 auto;
         margin: 0 auto;
         line-height: 1.5;
     }
@@ -615,6 +615,18 @@ header {
     body {
         overflow-x: hidden;
     }
+
+    .footer {
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-address,
+    .footer-social,
+    .footer-contact {
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 
@@ -643,5 +655,10 @@ header {
 
     .booking-form {
         flex-wrap: wrap;
+    }
+
+    .footer {
+        max-width: 1200px;
+        margin: 20px auto;
     }
 }
