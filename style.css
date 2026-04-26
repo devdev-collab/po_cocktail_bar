@@ -390,31 +390,64 @@ header {
 
 /* ----------BOOKING FORM----------*/
 .booking-form {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    align-items: end;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.field input,
+.field select {
+    background-color: var(--viole);
     color: white;
+    border: 2px solid var(--samasama);
+    padding: 14px 10px 6px;
+    border-radius: 5px;
+    font-size: 12pt;
+    outline: none;
+}
+
+.field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12pt;
+    pointer-events: none;
+    transition: 0.2s ease;
+    opacity: 0.8;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field select:focus + label,
+.field select:valid + label {
+    top: -10px;
+    font-size: 10pt;
+    opacity: 1;
+    background: var(--viole);
+    padding: 0 5px;
 }
 
 .booking-form button {
-    grid-column: 1 / -1;
-    justify-self: center;
-    padding: 10px 30px;
+    flex-basis: 100%;
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 40px;
     background-color: var(--samasama);
     border: none;
     color: white;
     font-size: 16pt;
     border-radius: 5px;
     cursor: pointer;
-}
-
-
-.field input,
-.field select {
-    width: 100%;
-    background-color: var(--viole);
-    color: white;
 }
 
 
