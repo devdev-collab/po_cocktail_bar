@@ -374,7 +374,6 @@ header {
 .booking {
     color: white;
     padding: 30px;
-    overflow-x: hidden;
 }
             
 .booking h3 {
@@ -401,7 +400,6 @@ header {
 }
 
 .field {
-    flex: 1 1 160px;
     min-width: 160px;
     box-sizing: border-box;
 }
