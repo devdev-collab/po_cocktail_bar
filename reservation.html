@@ -67,44 +67,37 @@
                 <section id="reservation-booking">
                     <h3>Book a Table</h3>
                         <form class="booking-form">
-                            <!-- Date -->
+
                             <div class="field">
+                                <input type="date" id="date" required>
                                 <label for="date">Date</label>
-                                <input type="date" id="date" name="date">
                             </div>
 
-                            <!-- Guests -->
                             <div class="field">
-                                <label for="guests">Guests</label>
-                                <select id="guests" name="guests">
+                                <select id="guests" required>
+                                    <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5+">5+</option>
                                 </select>
+                                <label for="guests">Guests</label>
                             </div>
 
-                            <!-- Location -->
                             <div class="field">
-                                <label for="location">Location</label>
-                                <select id="location" name="location">
+                                <select id="location" required>
+                                    <option value=""></option>
                                     <option value="indoor">Indoor</option>
                                     <option value="outdoor">Outdoor</option>
-                                    <option value="bar">Bar</option>
                                 </select>
+                                <label for="location">Location</label>
                             </div>
 
-                            <!-- Requests -->
                             <div class="field">
+                                <input type="text" id="requests" placeholder=" ">
                                 <label for="requests">Requests</label>
-                                <input type="text" id="requests" name="requests" placeholder="Any special requests?">
                             </div>
 
-                            <!-- Button -->
-                            <div class="field">
-                                <button type="submit">Book</button>
-                            </div>
+                            <button type="submit">Book</button>
 
                         </form>
 
