@@ -287,6 +287,7 @@ footer {
     margin: 0;
     text-align: left;
     align-items: left;
+    color: var(--enaena);
 }
 
     .footer {
@@ -302,16 +303,18 @@ footer {
         text-align: left;
         font-size: 16pt;
         font-family: var(--font-header);
+        color: white;
     }
 
     .footer h3 {
         font-size: 14pt;
+        font-family: var(--font-header);
+        color: white;
     }
 
     .footer p {
         font-size: 12pt;
         font-family: var(--font-body);
-        color: var(--enaena);
     }
 
     .footer a {
