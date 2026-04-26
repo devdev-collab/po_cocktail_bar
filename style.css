@@ -300,10 +300,17 @@ footer {
 
     .footer h2 {
         text-align: left;
+        font-size: 16pt;
+        font-family: var(--font-header);
+    }
+
+    .footer h3 {
+        font-size: 14pt;
     }
 
     .footer p {
         font-size: 12pt;
+        font-family: var(--font-body);
     }
 
     .footer a {
@@ -313,15 +320,6 @@ footer {
 
     .footer-address {
         grid-column: 1;
-    }
-
-    .footer-address h2 {
-        text-align: left;
-        margin: 0;
-    }
-
-    .footer-address h3 {
-        font-size: 12pt;
     }
 
     .footer-social {
@@ -360,7 +358,7 @@ footer {
     .footer a:hover {
         color: #f39c12;
     }
-
+         
 
 /* ==================================================
                     RESERVATION PAGE COMPONENTS
@@ -538,20 +536,6 @@ header {
 
 
 /* ----------FOOTER----------*/
-.footer {
-    color: white;
-    padding: 30px;
-}
-            
-.footer h2 {
-    font-size: 16pt;
-    font-family: var(--font-header);
-}
-
-.footer p {
-    font-size: 10pt;
-    font-family: var(--font-body);
-}
 
 
 /* ==================================================
