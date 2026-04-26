@@ -391,26 +391,27 @@ header {
 /* ----------BOOKING FORM----------*/
 .booking-form {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
     justify-content: center;
     align-items: flex-end;
 }
 
 .field {
     position: relative;
-    width: 180px;
+    flex: 1 1 140px;
+    min-width: 120px;
 }
 
 .field input,
 .field select {
-    width: 180px;
+    width: 100%;
     background-color: var(--viole);
     color: white;
     border: 1px solid var(--viole);
-    padding: 12px 10px;
+    padding: 10px 8px;
+    font-size: 11pt;
     border-radius: 5px;
-    font-size: 12pt;
     outline: none;
 }
 
@@ -525,6 +526,16 @@ header {
             background: none;
             width: auto;
         }
+
+
+    .field {
+        flex: 1 1 100%;
+    }
+
+    .booking-form button {
+        width: 100%;
+        max-width: 200px;
+    }
 }
 
 
