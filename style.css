@@ -326,7 +326,6 @@ footer {
     .footer-contact h2 {
         margin-top: 0;
         font-size: 16pt;
-        color: #ddd;
     }
 
     .footer-social p,
@@ -335,7 +334,6 @@ footer {
     }
 
     .footer-social a {
-        color: #ddd;
         text-decoration: none;
     }
 
