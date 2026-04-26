@@ -394,9 +394,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     align-items: end;
-    background-color: var(--viole);
     color: white;
-    padding: 10px 5px;
 }
 
 .booking-form button {
@@ -409,6 +407,11 @@ header {
     font-size: 16pt;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.field label{
+    background-color: var(--viole);
+    color: white;
 }
 
 .field input,
