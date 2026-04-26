@@ -112,6 +112,7 @@ html {
         var(--uliuli) 50%,
         var(--uliuli) 100%
         );
+    line-height: 1.4;
 }
 
 body {
