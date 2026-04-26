@@ -354,7 +354,6 @@ footer {
         display: block;
         text-align: left;
         max-width: 100%;
-        overflow: hidden;
         padding: 0;
         margin: 0;
     }
@@ -611,21 +610,12 @@ header {
         max-width: 200px;
     }
 
-    body {
-        overflow-x: hidden;
-    }
 
     .footer {
         padding: 0 20px;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer-address,
-    .footer-social,
-    .footer-contact {
-        max-width: 100%;
-        overflow: hidden;
-    }
 }
 
 
