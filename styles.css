@@ -552,6 +552,7 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
+        gap: 5px;
     }
 
     .navigation li {
@@ -565,6 +566,11 @@ footer {
         font-weight: normal;
     }
 
+    .navigation a:hover {
+        background-color: --white;
+        color: var(--viole);
+    }
+
     .dropdown-nav {
         position: static;
         flex-direction: row;
@@ -575,8 +581,8 @@ footer {
     }
 
     .circle {
-        width: 190px;
-        height: 190px;
+        width: 195px;
+        height: 195px;
         top: -140px;
     }
 
