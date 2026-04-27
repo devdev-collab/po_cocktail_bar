@@ -612,7 +612,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-auto-flow: row dense;
-        gap: 14px;
+        gap: 12px;
     }
 
     .box.tall {
