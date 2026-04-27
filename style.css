@@ -613,6 +613,10 @@ header {
             color: var(--black)
         }
 
+        #hamburger {
+            display: block;
+        }
+
         #hamburger, .navigation label {
             display: none;
         }
