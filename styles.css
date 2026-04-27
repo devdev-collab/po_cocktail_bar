@@ -109,50 +109,52 @@ body {
     color: white;
 }
 
-    .container {
-        width: 90%;
-        max-width: 1200px;
-        padding: 0 auto;
-        margin: 0 auto;
-        line-height: 1.5;
-    }
-
-    header {
-        display: block;
-        padding: 0;
-        margin: 0;
-        font-family: var(--font-header);
-    }
-
-        h1 {
-            font-size: 35pt;
-            text-align: center;
-        }
-
-        .title {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            padding: 20px 0;
-            margin: 0;
-            width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 auto;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
-            .logo-and-title {
-                display: flex;
-                padding-left: 20px;
-                align-items: center;
-                justify-content: flex-start;
-            }
+header {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-header);
+    position: relative;
+    z-index: 1;
+}
 
-                .logo-and-title h1 {
-                    font-weight: bolder;
-                    font-size: 35pt;
-                }
+h1 {
+    font-size: 35pt;
+    text-align: center;
+}
 
-                .logo-and-title p {
-                    font-size: var(--font-body);
-                }
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.logo-and-title {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-and-title h1 {
+    font-weight: bolder;
+    font-size: 35pt;
+}
+
+.logo-and-title p {
+    font-size: var(--font-body);
+}
 
 /*----------NAV----------*/
 
@@ -274,32 +276,34 @@ body {
 .story {
     background: linear-gradient(var(--lanumumu), var(--uliuli));
     text-align: center;
-    padding: 90px;
+    padding: 120px 20px 60px; /* more top padding */
     position: relative;
 }
 
 .circle {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     background: #ccc;
     border-radius: 50%;
-    border: 14px solid var(--lanumumu);
+    border: 16px solid var(--lanumumu);
     position: absolute;
-    top: -40px;
+    top: -90px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .story h2 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
 .story p {
     font-size: 13px;
     color: #ddd;
     line-height: 1.6;
-    max-width: 400px;
+    max-width: 320px;
     margin: 10px auto;
 }
 
