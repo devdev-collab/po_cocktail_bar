@@ -226,7 +226,7 @@ body {
         flex-direction: column;
         position: static;
         width: 100%;
-        max-width: 400px;
+        max-width: 100px;
         top: 100%;
         left: 0;
         right: 0;
@@ -595,6 +595,7 @@ header {
             flex-direction: row;
             background: none;
             width: auto;
+            max-width: 100%;
         }
 
 
@@ -631,12 +632,18 @@ header {
         display: none;
     }
 
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+    }
+
     .dropdown-nav {
         position: static;
         flex-direction: row;
         background: none;
         width: auto;
         padding: 0;
+        max-width: 1200px;
     }
 
     .booking-form {
