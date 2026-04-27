@@ -534,7 +534,7 @@ header {
     cursor: pointer;
 }
 
-.booking-form button {
+.booking-form button:hover {
         background-color: var(--lanumoli);
     }
 
