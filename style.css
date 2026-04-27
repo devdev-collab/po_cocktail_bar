@@ -398,8 +398,10 @@ header {
         align-items: start;
         background: linear-gradient(
             to bottom,
-            transparent 0%,
+            transparent 10%,
+            var(--viole) 25%,
             var(--viole) 50%,
+            var(--viole) 75%,
             transparent 100%
     );
     }
