@@ -429,7 +429,7 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
-        padding-bottom: 9rem;
+        padding-bottom: 12rem;
     }
 
     .title {
@@ -446,30 +446,33 @@ footer {
     .navigation {
         max-width: 1200px;
         margin: 0 auto;
-        align-items: center;
     }
 
     .navigation ul {
-        display: inline-flex;
-        gap: 10px;
-        flex-direction: row;
+        display: flex;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .navigation li {
-        display: block;
+        white-space: nowrap;
     }
 
-    .navigation a {
-        padding: 10px 15px;
-    }
+        .navigation a {
+            display: inline-block;
+            padding: 10px;
+            color: #ddd;
+            text-decoration: none;
+            font-weight: normal;
+            text-align: center;
+        }
 
-    .navigation label {
-        display: none;
-    }
+        .navigation label {
+            display: none;
+        }
 
     .navigation a:hover {
-        background-color: --white;
+        background-color: #ddd;
         color: var(--viole);
     }
 
@@ -500,8 +503,8 @@ footer {
     }
 
     .circle {
-        width: 190px;
-        height: 190px;
+        width: 185px;
+        height: 185px;
         top: -150px;
     }
 
