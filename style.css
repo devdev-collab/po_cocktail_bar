@@ -181,7 +181,7 @@ body {
 }
 
     .navigation ul {
-        display: flex;
+        display: none;
         list-style: none;
         margin: 0;
         justify-content: flex-end;
@@ -254,10 +254,6 @@ body {
         visibility: visible;
         opacity: 1;
         background-color: var(--black);
-    }
-
-    #hamburger:checked ~ .navigation ul {
-        display: none
     }
 
     label span {
@@ -592,20 +588,20 @@ header {
     .navigation ul {
         display: flex;
         justify-content: center;
-        flex-wrap: nowrap;
+        margin: 0;
     }
 
-    .navigation li {
-        white-space: nowrap;
-    }
+        .navigation li {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
 
         .navigation a {
             display: inline-block;
             padding: 10px 20px;
             color: var(--blue);
             text-decoration: none;
-            font-weight: normal;
-            text-align: center;
+            font-weight: bold;
         }
 
         .navigation label {
@@ -615,10 +611,6 @@ header {
         .navigation a:hover {
             background-color: var(--blue);
             color: var(--black)
-        }
-
-        #hamburger {
-            display: block;
         }
 
         #hamburger, .navigation label {
@@ -677,19 +669,6 @@ header {
     .navigation ul {
         display: flex;
         justify-content: center;
-        flex-wrap: nowrap;
-    }
-
-    .navigation li {
-        white-space: nowrap;
-    }
-
-
-    .navigation a {
-        padding: 10px 20px;
-        font-weight: normal;
-        text-align: center;
-        font-weight: normal;
     }
 
     .dropdown-nav {
