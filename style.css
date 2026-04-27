@@ -435,7 +435,10 @@ header {
         grid-row: 2;
         justify-self: center;
         display: inline-block;
-        padding: 10px 20px;
+        flex-basis: 100%;
+        width: 140px;
+        margin: 20px auto 0;
+        padding: 8px 20px;
         background-color: var(--samasama);
         color: white;
         text-decoration: none;
