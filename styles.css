@@ -275,7 +275,7 @@ h1 {
 .story {
     background: linear-gradient(var(--lanumumu), var(--uliuli));
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 110px 20px 60px;
     position: relative;
 }
 
@@ -294,7 +294,7 @@ h1 {
 
 .story h2 {
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 28px;
 }
 
