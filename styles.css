@@ -622,11 +622,12 @@ footer {
 
     .box.wide {
         grid-column: span 2;
-        height: 180px;
+        height: 193px;
+        width: auto;
     }
 
     .box {
-        height: 130px;
+        height: 193px;
     }
 
     .footer {
