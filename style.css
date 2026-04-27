@@ -669,11 +669,11 @@ header {
     .navigation ul {
         display: flex;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
-    .navigation ul {
-        justify-content: center;
-        flex-wrap: nowrap;
+    .navigation li {
+        white-space: nowrap;
     }
 
 
