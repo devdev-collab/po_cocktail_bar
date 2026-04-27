@@ -443,7 +443,6 @@ header {
         text-decoration: none;
         border-radius: 5px;
         font-size: 16pt;
-        align-items: center;
     }
 
     .address-wrapper a:hover {
@@ -532,6 +531,7 @@ header {
     font-size: 14pt;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
 }
 
 .booking-form button:hover {
