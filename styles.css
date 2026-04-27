@@ -294,7 +294,8 @@ h1 {
 
 .story h2 {
     margin-bottom: 25px;
-    font-size: 28px;
+    font: var(--font-header);
+    font-size: 27px;
 }
 
 .story p {
@@ -308,6 +309,12 @@ h1 {
 /* Gallery Grid */
 .gallery {
     padding: 30px 20px;
+}
+
+.gallery h2 {
+    font: var(--font-header);
+    font-size: 27px;
+    margin-bottom: 30px;
 }
 
 .grid {
@@ -602,7 +609,6 @@ footer {
     .story p {
     justify-self: start;
 }
-
 
     .footer {
         max-width: 1200px;
