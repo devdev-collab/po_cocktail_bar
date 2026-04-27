@@ -628,7 +628,9 @@ header {
 
     .booking-form button {
         width: 100%;
-        max-width: 200px;
+        margin: 10px auto 0;
+        padding: 8px 20px;
+        max-width: 400px;
     }
 
 
