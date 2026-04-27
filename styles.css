@@ -420,12 +420,27 @@ footer {
     margin: 0;
 }
 
+.container {
+    padding: 0;
+}
+
 header {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 9rem;
+}
+
+.title {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+}
+    
+.logo-and-title {
+    justify-content: center;
+    padding-left: 0;
 }
 
 .navigation {
@@ -474,15 +489,19 @@ header {
     width: auto;
 }
 
-.title {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 10px;
+.story {
+    padding: 100px 40px 80px;
 }
-    
-.logo-and-title {
-    justify-content: center;
-    padding-left: 0;
+
+.story p {
+    max-width: 600px;
+    font-size: 14px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    top: -150px;
 }
 
 .grid {
