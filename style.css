@@ -435,7 +435,7 @@ header {
     .address-wrapper a {
         grid-column: 2;
         grid-row: 2;
-        justify-self: start;
+        justify-self: center;
         display: inline-block;
         padding: 10px 20px;
         background-color: var(--samasama);
@@ -531,7 +531,6 @@ header {
     font-size: 14pt;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
 }
 
 .booking-form button:hover {
