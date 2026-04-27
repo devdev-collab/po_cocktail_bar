@@ -314,12 +314,12 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: 16px;
 }
 
 .box {
     background: #ccc;
-    height: 180px;
+    height: 150px;
 }
 
 .box.tall {
@@ -328,7 +328,7 @@ h1 {
 
 .box.wide {
     grid-column: span 1;
-    height: 160px;
+    height: 175px;
 }
 
 /*----------FOOTER----------*/
