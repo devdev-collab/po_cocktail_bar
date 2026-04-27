@@ -396,14 +396,8 @@ header {
         grid-template-rows: auto auto;
         row-gap: 10px;
         align-items: start;
-        background: linear-gradient(
-            to bottom,
-            transparent 10%,
-            var(--viole) 25%,
-            var(--viole) 50%,
-            var(--viole) 75%,
-            transparent 100%
-    );
+        height: 30px;
+        background-color: var(--viole);
     }
 
     .address-wrapper img {
