@@ -186,6 +186,7 @@ body {
         .navigation li {
             list-style: none;
             padding: 5px 20px;
+            background-color: var(--viole);
         }
 
         .navigation a, .navigation a:visited, .navigation a:active {
@@ -226,7 +227,6 @@ body {
         flex-direction: column;
         position: static;
         width: 100%;
-        max-width: 100px;
         top: 100%;
         left: 0;
         right: 0;
