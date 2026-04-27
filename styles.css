@@ -1,0 +1,349 @@
+/* ==================================================
+                    IMPORTS
+================================================== */
+@import url("https://use.typekit.net/bbc3lgt.css");
+
+
+
+/* ==================================================
+                    CSS RESET
+================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ==================================================
+                    ROOT VARIABLES
+================================================== */
+
+:root {
+
+/*----------COLOR----------*/
+    --samasama: #F7931E;
+	--lanumoli: #F15A24;
+	--efuefu: #534741;
+	--viole: #572235;
+	--uliuli: #000000;
+	--enaena: #998675;
+	--lanumumu: #C93E3E;
+
+/*----------FONTS----------*/
+    --font-header: "Inter", "Roboto";
+    --font-body: "Roboto", "Open Sans", sans-serif;
+
+/*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
+    Title                                       35pt
+    Headers		                Inter Bold      27pt
+	Menu Descriptions and p     Roboto regular  12pt
+	Online Menu		            Roboto regular  16pt
+*/
+}
+
+
+
+
+
+/* ==================================================
+                    GLOBAL STYLES
+================================================== */
+            
+html {
+    min-width: 400px;
+    background: linear-gradient(
+        to bottom, 
+        var(--viole) 0%,
+        var(--uliuli) 40%, 
+        var(--uliuli) 50%,
+        var(--uliuli) 100%
+        );
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-body);
+    color: white;
+}
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        padding: 0 auto;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    header {
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-family: var(--font-header);
+    }
+
+        h1 {
+            font-size: 35pt;
+            text-align: center;
+        }
+
+        .title {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 20px 0;
+            margin: 0;
+            width: 100%;
+}
+
+            .logo-and-title {
+                display: flex;
+                padding-left: 20px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+                .logo-and-title h1 {
+                    font-weight: bolder;
+                    font-size: 35pt;
+                }
+
+                .logo-and-title p {
+                    font-size: var(--font-body);
+                }
+
+/*----------NAV----------*/
+
+.navigation {
+    justify-self: end;
+    position: relative;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 16pt;
+    font-family: var(--font-header);
+    color: white;
+}
+
+    .navigation ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .navigation li {
+        list-style: none;
+        padding: 5px 20px;
+    }
+
+    .navigation a, .navigation a:visited, .navigation a:active {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: var(--blue);
+        transition: background-color 0.5s;
+    }
+
+    .navigation li:hover, .navigation a:hover {
+        color: var(--black);
+        background-color: var(--blue);
+    }
+
+#hamburger {
+    display: none;
+}
+
+    .navigation label {
+        display: block;
+        order: 2;
+        cursor: pointer;
+        margin-right: 10px;
+        z-index: 101;
+        position: relative;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .dropdown-nav {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        padding: 20px 0;
+        z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .dropdown-nav a {
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    #hamburger:checked ~ .dropdown-nav {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        background-color: var(--black);
+    }
+
+    label span {
+        background-color: white;
+        display: block;
+        height: .25rem;
+        position: relative;
+        transition: background-color .3s ease-out;
+        width: 2rem;
+    }
+
+    label span:before, label span:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    label span:before {
+        top: .75rem;
+        left: 0;
+    }
+
+    label span:after {
+        top: -.75rem;
+        left: 0;
+    }
+
+/*----------FOOTER----------*/
+footer {
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: auto;
+    }
+
+    .footer h2 {
+        text-align: left;
+        font-size: 16pt;
+        font-family: var(--font-header);
+    }
+
+    .footer h3 {
+        font-size: 14pt;
+        font-family: var(--font-header);
+        color: var(--enaena);
+    }
+
+    .footer p {
+        font-size: 12pt;
+        font-family: var(--font-body);
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-address {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-social {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .footer-social h2 {
+        margin-top: 0;
+        font-size: 16pt;
+        text-align: left;
+    }
+
+    .footer-social p {
+        margin: 5px 0;
+    }
+
+    .footer-address, .footer-social {
+        display: block;
+        text-align: left;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer a:hover {
+        color: #f39c12;
+    }
