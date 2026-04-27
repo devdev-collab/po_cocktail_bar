@@ -437,7 +437,7 @@ header {
         display: inline-block;
         flex-basis: 100%;
         width: 140px;
-        margin: 20px auto 0;
+        margin: 10px auto 0;
         padding: 8px 20px;
         background-color: var(--samasama);
         color: white;
@@ -524,7 +524,7 @@ header {
 .booking-form button {
     flex-basis: 100%;
     width: 140px;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     padding: 8px 20px;
     background-color: var(--samasama);
     border: none;
