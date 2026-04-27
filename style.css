@@ -431,7 +431,7 @@ header {
     #address-content {
         grid-column: 3;
         grid-row: 1;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     #address-content h2 {
