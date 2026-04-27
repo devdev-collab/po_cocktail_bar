@@ -389,6 +389,12 @@ footer {
         text-align: center;
     }
 
+    .footer-address h2 {
+        margin-top: 0;
+        font-size: 16pt;
+        text-align: center;
+    }
+
     .footer-social {
         grid-column: 2;
         display: flex;
@@ -432,7 +438,7 @@ footer {
     } 
 
     header {
-        width: 90%;
+        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
@@ -502,10 +508,6 @@ footer {
         flex-direction: row;
         background: none;
         width: auto;
-    }
-
-    .story {
-        padding: 85px 40px 80px;
     }
 
     .story p {
