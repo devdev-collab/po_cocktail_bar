@@ -449,6 +449,14 @@ header {
         font-size: 16pt;
     }
 
+    .address-wrapper h2 {
+
+    }
+
+    .address-wrapper p {
+        
+    }
+
     .address-wrapper a:hover {
         background-color: var(--lanumoli);
     }
