@@ -534,6 +534,9 @@ header {
     cursor: pointer;
 }
 
+.booking-form button {
+        background-color: var(--lanumoli);
+    }
 
 /* ----------FOOTER----------*/
 
