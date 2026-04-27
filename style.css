@@ -170,7 +170,7 @@ body {
     justify-self: end;
     position: relative;
     padding-right: 20px;
-    text-align: right;
+    text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
     color: white;
