@@ -273,7 +273,7 @@ h1 {
 
     /* Story Section */
 .story {
-    background: linear-gradient(var(--lanumumu) 12%, var(--uliuli) 80%);
+    background: linear-gradient(var(--viole) 12%, var(--uliuli) 80%);
     text-align: center;
     padding: 80px 20px 60px;
     position: relative;
@@ -285,7 +285,7 @@ h1 {
     height: 180px;
     background: #ccc;
     border-radius: 50%;
-    border: 20px solid var(--lanumumu);
+    border: 20px solid var(--viole);
     position: absolute;
     top: -35px;
     transform: translate(-50%, -50%);
@@ -314,12 +314,12 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
 }
 
 .box {
     background: #ccc;
-    height: 150px;
+    height: 130px;
 }
 
 .box.tall {
