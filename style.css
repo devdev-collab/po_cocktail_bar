@@ -559,6 +559,13 @@ header {
         margin: 0;
     }
 
+    header {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .navigation ul {
         display: flex;
         justify-content: flex-end;
@@ -598,7 +605,6 @@ header {
             flex-direction: row;
             background: none;
             width: auto;
-            max-width: 100%;
         }
 
 
