@@ -285,7 +285,7 @@ body {
 footer {
     padding: 20px;
     margin: 0;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -299,7 +299,7 @@ footer {
     }
 
         .footer h2 {
-            text-align: left;
+            text-align: center;
             font-size: 16pt;
             font-family: var(--font-header);
         }
@@ -339,7 +339,7 @@ footer {
         .footer-social h2 {
             margin-top: 0;
             font-size: 16pt;
-            text-align: left;
+            text-align: center;
         }
 
         .footer-social p {
@@ -348,7 +348,7 @@ footer {
 
         .footer-address, .footer-social {
             display: block;
-            text-align: left;
+            text-align: center;
             max-width: 100%;
             padding: 0;
             margin: 0;
