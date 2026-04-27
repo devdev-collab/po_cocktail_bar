@@ -97,7 +97,6 @@ html {
     min-width: 400px;
     background: linear-gradient(
         to bottom, 
-        var(--viole) 0%,
         var(--uliuli) 40%, 
         var(--uliuli) 50%,
         var(--uliuli) 100%
@@ -270,6 +269,64 @@ body {
         top: -.75rem;
         left: 0;
     }
+
+    /* Story Section */
+.story {
+    background: linear-gradient(var(--lanumumu), var(--uliuli));
+    text-align: center;
+    padding: 90px;
+    position: relative;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 14px solid var(--lanumumu);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.story h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.story p {
+    font-size: 13px;
+    color: #ddd;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+/* Gallery Grid */
+.gallery {
+    padding: 30px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.box {
+    background: #ccc;
+    height: 180px;
+}
+
+.box.tall {
+    height: 300px;
+}
+
+.box.wide {
+    grid-column: span 1;
+    height: 160px;
+}
 
 /*----------FOOTER----------*/
 footer {
