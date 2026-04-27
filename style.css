@@ -580,6 +580,11 @@ header {
         padding: 0;
     }
 
+    .navigation {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .navigation ul {
         display: flex;
         justify-content: flex-end;
@@ -655,6 +660,11 @@ header {
 
      #hamburger, .navigation label {
         display: none;
+    }
+
+    .navigation {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .navigation ul {
