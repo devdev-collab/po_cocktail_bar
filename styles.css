@@ -429,7 +429,7 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
-        padding-bottom: 12rem;
+        padding-bottom: 13rem;
     }
 
     .title {
@@ -472,7 +472,7 @@ footer {
         }
 
     .navigation a:hover {
-        background-color: #ddd;
+        background-color: var(--uliuli);
         color: var(--viole);
     }
 
@@ -539,7 +539,7 @@ footer {
     }
 
     header {
-        padding-bottom: 12rem;
+        padding-bottom: 14rem;
     }
 
     #hamburger, .navigation label {
@@ -570,7 +570,7 @@ footer {
     }
 
     .navigation a:hover {
-        background-color: --white;
+        background-color: var(--uliuli);
         color: var(--viole);
     }
 
@@ -587,6 +587,22 @@ footer {
         width: 195px;
         height: 195px;
         top: -140px;
+    }
+
+    .story {
+        display: grid;
+        align-items: center;
+        text-align: left;
+        padding: 120px 60px 100px;
+        gap: 40px;
+    }
+
+    .story h2 {
+        justify-self: center;
+    }
+
+    .story p {
+        justify-self: center;
     }
 
     .footer {
