@@ -84,7 +84,7 @@ table {
 	--lanumumu: #C93E3E;
 
 /*----------FONTS----------*/
-    --font-header: "Inter", "Roboto";
+    --font-header: 'Trajan Pro', serif;
     --font-body: "Roboto", "Open Sans", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
@@ -96,7 +96,7 @@ table {
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(---font-body);
     font-weight: 400;
     line-height: 1.6;
     color: #333;
@@ -104,14 +104,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
+    font-family: var(--font-header);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 nav a {
-    font-family: var(--header-font);
+    font-family: var(--font-header);
     text-decoration: none;
     font-weight: 700;
 }
