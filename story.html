@@ -15,20 +15,28 @@
 
     <link rel="stylesheet" href="styles.css
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="#index.html" class="active">Home</a></li>
-                <li><a href="#story.html" class="about">Story</a></li>
-                <li><a href="#menu.html">Menu</a></li>
-                <li><a href="#events.html">Events</a></li>
-                <li><a href="#reservations.html">Reservations</a></li>
-            </ul>
-        </nav>
+        <div class="container title">
+            <div class="logo-and-title">
+                <img src="" alt="">
+            </div>
+
+            <nav class="navigation">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger"><span></span></label>
+                <ul class="dropdown-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="cocktails.html">Cocktails</a></li>
+                    <li><a href="events.html">Event Calendar</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <main>
@@ -39,29 +47,25 @@
     </main>
 
     <footer>
-        <div class="container-footer">
-            <div class="footer-address">
-                <h2>Pō Cocktail Lounge</h2>
+        <div class="container footer">
+            <section class="footer-address">
+                <h2>Tiki Vicks</h2>
                     <h3>Address</h3>
-                    <p>444 Pō Cocktail Lounge Road, HI 20026</p>
-
+                    <p><a href="">543 Tiki Vicks Lounge, Cocktail Road, HI 20026</a></p>
+                    <br>
                     <h3>Hours of Operation</h3>
-                    <p>*Placeholder*</p>
-            </div>
+                    <p>OPEN EVERYDAY | 11AM-12AM</p>
+            </section>
 
-            <div class="footer-social">
+            <section class="footer-social">
                 <h2>Follow Us</h2>
                 <p><a href="">Instagram</a></p>
                 <p><a href="">Facebook</a></p>
-            </div>
-
-            <div class="footer-contact">
+                <br>
                 <h2>Contact</h2>
-                <p>*Placeholder*</p>
-            </div>
+                <p><a href="">(450) 550-2026</a></p>
+            </section>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
