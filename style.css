@@ -181,10 +181,11 @@ body {
 }
 
     .navigation ul {
-        display: none;
+        display: flex;
         list-style: none;
         margin: 0;
         justify-content: flex-end;
+        flex-wrap: nowrap;
     }
 
         .navigation li {
