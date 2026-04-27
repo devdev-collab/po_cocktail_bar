@@ -140,6 +140,10 @@ body {
             font-family: var(--font-header);
         }
 
+        h2, h3 {
+            font-family: var(--font-header);
+        }
+
         .title {
             display: grid;
             grid-template-columns: 1fr 1fr;
