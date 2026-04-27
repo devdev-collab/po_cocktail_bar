@@ -671,6 +671,19 @@ header {
         justify-content: center;
     }
 
+    .navigation ul {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+
+    .navigation a {
+        padding: 10px 20px;
+        font-weight: normal;
+        text-align: center;
+        font-weight: normal;
+    }
+
     .dropdown-nav {
         position: static;
         flex-direction: row;
