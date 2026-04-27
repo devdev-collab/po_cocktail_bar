@@ -73,8 +73,8 @@ table {
 	--lanumumu: #C93E3E;
 
 /*----------FONTS----------*/
-    --font-header: "Inter", "Roboto";
-    --font-body: "Roboto", "Open Sans", sans-serif;
+    --font-header: "Trajan Pro", "Roboto", "Inter";
+    --font-body: "Roboto", "Inter", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
     Title                                       35pt
@@ -118,7 +118,7 @@ body {
 
 header {
     display: block;
-    padding-bottom: 12rem;
+    padding-bottom: 11rem;
     margin: 0;
     font-family: var(--font-header);
     position: relative;
@@ -281,16 +281,16 @@ h1 {
 }
 
 .circle {
-    width: 185px;
+    width: 180px;
     height: 180px;
     background: #ccc;
-    border-radius: 50%;
-    border: 20px solid var(--viole);
+    border-radius: 55%;
+    border: 14px solid var(--viole);
     position: absolute;
-    top: -35px;
-    transform: translate(-50%, -50%);
+    top: -140px;
+    transform: translate(-50%);
     left: 50%;
-    z-index: 2;
+    align-content: center;
 }
 
 .story h2 {
