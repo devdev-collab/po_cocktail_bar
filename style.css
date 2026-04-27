@@ -531,7 +531,7 @@ header {
     font-size: 14pt;
     border-radius: 5px;
     cursor: pointer;
-    align-items: center;
+    text-align: center;
 }
 
 .booking-form button:hover {
