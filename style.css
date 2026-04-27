@@ -84,8 +84,8 @@ table {
 	--lanumumu: #C93E3E;
 
 /*----------FONTS----------*/
-    --font-header: "Inter", "Roboto";
-    --font-body: "Roboto", "Open Sans", sans-serif;
+    --font-header: "Trajan Pro", "Roboto", "Inter";
+    --font-body: "Roboto", "Inter", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
     Title                                       35pt
@@ -426,7 +426,7 @@ header {
     #address-content {
         grid-column: 3;
         grid-row: 1;
-        padding-top: 38px;
+        padding-top: px;
     }
 
     #address-content h2 {
