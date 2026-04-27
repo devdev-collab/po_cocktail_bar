@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Pō Cocktail Bar | Home</title>
+    <title>Pō Cocktail Lounge | Home</title>
     
     <meta name="description" content="Pō: A luxe tiki experience with polynesian roots. Fresh exotic cocktails flow and good company is embraced like ritual.">
 
@@ -21,26 +21,121 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-            </ul>
-        </nav>
+        <div class="container title">
+            <div class="logo-and-title">
+                <img src="" alt="">
+            </div>
+
+            <nav class="navigation">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger"><span></span></label>
+                <ul class="dropdown-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="cocktails.html">Cocktails</a></li>
+                    <li><a href="events.html">Event Calendar</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
+
     <main>
-        <section id="hero">
-            <h1>Welcome to Pō</h1>
-            <p>This is where the homepage content will live.</p>
-        </section>
+        <div class="container reservation">
+            <section id="reservation">
+                <h1>P&omacr;</h1>
+                <p>OPEN EVERYDAY 11AM-12AM</p>
+                <a href="reservation.html">BOOK RESERVATION</a>
+            </section>
+        </div>
+
+        <div class="container menu">
+            <section id="menu">
+                <h2>Cocktails</h2>
+                    <section class="cocktail c1">
+                        <h3>Cocktail 1</h3>
+                        <p>Inspiration ingredients</p>
+                    </section>
+
+                    <section class="cocktail c2">
+                        <h3>Cocktail 2</h3>
+                        <p>Inspiration ingredients</p>
+                    </section>
+
+                    <section class="cocktail c3">
+                        <h3>Cocktail 3</h3>
+                        <p>Inspiration ingredients</p>
+                    </section>
+
+                    <section class="cocktail c4">
+                        <h3>Cocktail 4</h3>
+                        <p>Inspiration ingredients</p>
+                    </section>
+
+                    <a href="cocktails.html">SEE FULL MENU</a>
+            </section>
+        </div>
+
+        <div class="container events">
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                    <section class="event e1">
+                        <img src="" srcset="" sizes="" alt="">
+                        <p class="date">1/10</p>
+                        <p class="name">Show Name 1</p>
+                        <p class="cost">FREE</p>
+                    </section>
+
+                    <section class="event e2">
+                        <img src="" srcset="" sizes="" alt="">
+                        <p class="date">2/22</p>
+                        <p class="name">Show Name 2</p>
+                        <p class="cost">FREE</p>
+                    </section>
+
+                    <section class="event e3">
+                        <img src="" srcset="" sizes="" alt="">
+                        <p class="date">2/26</p>
+                        <p class="name">Show Name 3</p>
+                        <p class="cost">$20 AT DOOR</p>
+                    </section>
+            </section>
+        </div>
+
+        <div class="container about">
+            <section id="about">
+                <h2>Our Story</h2>
+                <p>Details</p>
+            </section>
+        </div>
+
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Project Rum Barrel</p>
+        <div class="container footer">
+            <div class="footer-address">
+                <h2>Pō Cocktail Lounge</h2>
+                    <h3>Address</h3>
+                    <p>543 Pele Road, Cocktail, HI 20026</p>
+
+                    <h3>Hours of Operation</h3>
+                    <p>OPEN EVERYDAY 11AM-12AM</p>
+            </div>
+
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <p><a href="">Instagram</a></p>
+                <p><a href="">Facebook</a></p>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact</h2>
+                <p>(450) 550-2026</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
