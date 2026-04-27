@@ -423,6 +423,12 @@ header {
         background-color: var(--viole);
     }
 
+    #address-content {
+        grid-column: 3;
+        grid-row: 1;
+        padding-top: 40px;
+    }
+
     #address-content h2 {
         font-size: 27pt;
         font-family: var(--font-header);
@@ -434,7 +440,7 @@ header {
     }
 
     .address-wrapper a {
-        grid-column: 4;
+        grid-column: 3;
         grid-row: 2;
         justify-self: center;
         display: inline-block;
