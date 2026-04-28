@@ -1,4 +1,4 @@
-/* ==================================================
+ /* ==================================================
                     CSS INFO
 ================================================== */
 /* ----------CSS BY ANGELA ROQUE---------- */
@@ -75,13 +75,13 @@ table {
 :root {
 
 /*----------COLOR----------*/
-    --samasama: #F7931E;
-	--lanumoli: #F15A24;
-	--efuefu: #534741;
-	--viole: #572235;
-	--uliuli: #000000;
-	--enaena: #998675;
-	--lanumumu: #C93E3E;
+--obsidian: #0A0711;
+--oxblood: #961E1E;
+--ember: #C85B29;
+--smoke-violet: #3C3642;
+--bone: #E5DDD1;
+--text-bone: #DBDFDC;
+--muted-gold: #B89A5A;
 
 /*----------FONTS----------*/
     --font-header: 'Trajan Pro', serif;
@@ -415,7 +415,7 @@ body {
     .booking-form {
         flex-wrap: wrap;
     }
-}
+} 
 
 
 
