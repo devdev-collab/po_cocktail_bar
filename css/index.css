@@ -88,6 +88,12 @@ header {
     letter-spacing: 2px;
 }
 
+.logo-and-title img {
+    height: 60px;      /* Adjust this number until it looks right in your header */
+    width: auto;       /* This ensures you don't distort the logo  */
+    display: block;
+    max-width: 100%;   /* Safeguard for very small screens */
+}
 
 /* ==================================================
                     MAIN CONTENT SECTIONS
@@ -97,9 +103,10 @@ header {
 .hero {
     height: 60vh;
     min-height: 400px;
-    background-color: #ccc; /* Placeholder for Background Image */
-    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px)), 
-                      linear-gradient(to bottom left, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px));
+    background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('images/Photo_Video_GIT450_Bar_V1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
