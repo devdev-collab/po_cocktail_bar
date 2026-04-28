@@ -28,7 +28,16 @@ nav a, a {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    max-width: none; 
+    margin: 0;
+    padding: 3rem 1.5rem; 
+    box-sizing: border-box;
+}
+
+/* Specific fix for the header to keep it flush */
+header .container.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* --- BUTTONS --- */
@@ -89,10 +98,10 @@ header {
 }
 
 .logo-and-title img {
-    height: 60px;      /* Adjust this number until it looks right in your header */
-    width: auto;       /* This ensures you don't distort the logo  */
+    height: 60px;      
+    width: auto;       
     display: block;
-    max-width: 100%;   /* Safeguard for very small screens */
+    max-width: 100%;  
 }
 
 /* ==================================================
@@ -100,11 +109,19 @@ header {
 ================================================== */
 
 /* --- HERO --- */
+.hero-container-full {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
 .hero {
+    width: 100%;
     height: 60vh;
     min-height: 400px;
-    background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('images/Photo_Video_GIT450_Bar_V1.png');
-    background-size: cover;
+    background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('../images/Photo_Video_GIT450_Bar_V1.png');
+    background-size: cover;    
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -142,13 +159,13 @@ header {
 
 .cocktail-card {
     min-width: 160px;
-    background-color: var(--smoke-violet);
+    background-color: var(--oxblood);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     scroll-snap-align: center;
     /* Glowing Effect based on Ember brand color */
-    box-shadow: 0 0 20px rgba(200, 91, 41, 0.3);
-    border: 1px solid var(--oxblood);
+    box-shadow: 0 0 20px rgba(200, 91, 41, 0.7);
+    border: 1px solid var(--ember);
 }
 
 .card-img-placeholder {
@@ -171,8 +188,12 @@ header {
 /* --- EVENTS --- */
 .events {
     padding: 3rem 1.5rem;
-    /* Placeholder for Polynesian pattern background */
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(60, 54, 66, 0.3) 10px, rgba(60, 54, 66, 0.3) 20px);
+    background: 
+        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+        url('../images/Asset 1.png'); 
+    
+    background-repeat: repeat;
+    background-size: 600px; /* Adjust this number to scale the pattern up or down */
 }
 
 .event-list {
@@ -218,31 +239,53 @@ header {
 }
 
 /* --- OUR STORY --- */
-.about {
-    background: linear-gradient(135deg, var(--oxblood) 0%, var(--obsidian) 100%);
-}
 
 .story {
-    padding: 0 0 3rem 0;
+    position: relative;
+    padding: 5rem 1.5rem 8rem 1.5rem;
+    background: 
+        linear-gradient(to top, var(--oxblood) 250px, transparent 250px),
+        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+        url('../images/Asset 1.png');
+    background-size: auto, auto, 600px; 
+    background-repeat: repeat;
+    
+    overflow: hidden; 
+    z-index: 1;
+}
+
+
+.story::before {
+    content: "";
+    position: absolute;
+    background-color: var(--oxblood); 
+    border-radius: 50%;   
+    width: 500px; 
+    height: 500px;
+    top: 70px; 
+    right: -250px; 
+    
+    z-index: -1; 
+}
+
+.story-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    top: 80px; 
 }
 
 .story-img-placeholder {
-    width: 100%;
+    width: 60%;
     height: 300px;
     background-color: #ccc;
     background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px)), 
                       linear-gradient(to bottom left, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px));
-    margin-bottom: 2rem;
-}
-
-.story-content {
-    padding: 0 1.5rem;
-}
-
-.story-content p {
-    text-align: justify;
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    top: 80px; 
+    z-index: 2;
 }
 
 /* ==================================================
@@ -287,6 +330,46 @@ footer a:hover {
                     MEDIA QUERIES
 ================================================== */
 
+@media screen and (min-width: 900px) {
+    .story {
+        padding: 8rem 1.5rem 200px 1.5rem;
+        background: 
+            linear-gradient(to top, var(--oxblood) 200px, transparent 200px),
+            linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+            url('../images/Asset 1.png'); 
+        background-size: auto, auto, 600px;
+    }
+
+    .story-img-placeholder {
+        width: 80%;
+        max-width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        top: 0; 
+    }
+
+    .story-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 800px;
+        height: 200px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        top: auto; 
+    }
+
+    .story::before {
+        width: 1000px; 
+        height: 1000px;
+        top: auto; 
+        bottom: -300px; 
+        right: -400px; 
+    }
+}
 @media screen and (min-width: 600px) {
     /* FOOTER FLEX FOR TABLET/DESKTOP */
     .footer-grid {
