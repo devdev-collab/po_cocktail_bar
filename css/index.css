@@ -68,41 +68,6 @@ header .container.title {
     width: max-content;
 }
 
-/* ==================================================
-                    HEADER & NAV
-================================================== */
-header {
-    background-color: var(--smoke-violet);
-    border-bottom: 1px solid var(--muted-gold);
-}
-
-.title {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 15px 0;
-    width: 100%;
-}
-
-.logo-and-title {
-    display: flex;
-    padding-left: 20px;
-    align-items: center;
-}
-
-.logo-and-title h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: var(--muted-gold);
-    letter-spacing: 2px;
-}
-
-.logo-and-title img {
-    height: 60px;      
-    width: auto;       
-    display: block;
-    max-width: 100%;  
-}
 
 /* ==================================================
                     MAIN CONTENT SECTIONS
