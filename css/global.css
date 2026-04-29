@@ -133,16 +133,21 @@ body {
 }
 
     .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    line-height: 1.5;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 3rem 1.5rem;
+        box-sizing: border-box;
     }
-
 
                 header {
                     background-color: var(--smoke-violet);
                     border-bottom: 1px solid var(--muted-gold);
+                }
+
+                header .container.title {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
                 }
                 
                 .title {
