@@ -188,8 +188,7 @@ body {
 .navigation {
     justify-self: end;
     position: relative;
-    padding-right: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
     color: white;
@@ -200,25 +199,27 @@ body {
         list-style: none;
         margin: 0;
         justify-content: flex-end;
+        flex-wrap: nowrap;
     }
 
-    .navigation li {
-        list-style: none;
-        padding: 5px 20px;
-    }
+        .navigation li {
+            list-style: none;
+            padding: 5px 20px;
+            background-color: var(--viole);
+        }
 
-    .navigation a, .navigation a:visited, .navigation a:active {
-        display: block;
-        padding: 10px 30px;
-        text-decoration: none;
-        color: var(--blue);
-        transition: background-color 0.5s;
-    }
+        .navigation a, .navigation a:visited, .navigation a:active {
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: var(--blue);
+            transition: background-color 0.5s;
+        }
 
-    .navigation li:hover, .navigation a:hover {
-        color: var(--black);
-        background-color: var(--blue);
-    }
+        .navigation li:hover, .navigation a:hover {
+            color: var(--black);
+            background-color: var(--blue);
+        }
 
 #hamburger {
     display: none;
@@ -245,7 +246,6 @@ body {
         flex-direction: column;
         position: static;
         width: 100%;
-        max-width: 400px;
         top: 100%;
         left: 0;
         right: 0;
@@ -268,6 +268,10 @@ body {
         visibility: visible;
         opacity: 1;
         background-color: var(--black);
+    }
+
+    #hamburger:checked ~ .navigation ul {
+        display: none
     }
 
     label span {
@@ -336,48 +340,6 @@ body {
         margin: 0;
     }
 
-    .navigation ul {
-        display: flex;
-        justify-content: flex-end;
-        margin: 0;
-        padding: 0 30px;
-    }
-
-        .navigation li {
-            margin-left: 0;
-            margin-bottom: 0;
-        }
-
-        .navigation a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: var(--blue);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .navigation label {
-            display: none;
-        }
-
-        .navigation a:hover {
-            background-color: var(--blue);
-            color: var(--black)
-        }
-
-        #hamburger, .navigation label {
-            display: none;
-        }
-
-        .dropdown-nav {
-            display: flex !important;
-            position: static;
-            flex-direction: row;
-            background: none;
-            width: auto;
-        }
-
-
     .field {
         flex: 1 1 100%;
     }
@@ -386,10 +348,64 @@ body {
         width: 100%;
         max-width: 200px;
     }
+
+/* NAV & FOOTER  */
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
+.navigation li {
+    white-space: nowrap;
+}
 
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+
+.footer {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
 
 
             /* ----------MEDIA QUERIES (LARGE)---------- */
@@ -400,22 +416,66 @@ body {
         margin: 0;
     }
 
-     #hamburger, .navigation label {
+    .booking-form {
+        flex-wrap: wrap;
+    }
+
+/* NAV & FOOTER  */
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.navigation li {
+    white-space: nowrap;
+}
+
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
         display: none;
     }
 
     .dropdown-nav {
+        display: flex !important;
         position: static;
         flex-direction: row;
         background: none;
         width: auto;
-        padding: 0;
     }
 
-    .booking-form {
-        flex-wrap: wrap;
-    }
-} 
+.footer {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
 
 
 
