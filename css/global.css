@@ -1,7 +1,6 @@
-/* ==================================================
+ /* ==================================================
                     CSS INFO
 ================================================== */
-/* ----------CSS BY ANGELA ROQUE---------- */
 /* GIT 450-550: CREATIVE TEAM AND PROCESS WORKFLOW */
 /* MODULE 5: 5.6 REVISIONS ROUND2 */
 /* For educational purposes only. */
@@ -75,28 +74,40 @@ table {
 :root {
 
 /*----------COLOR----------*/
-    /*----------COLOR----------*/
-    --obsidian: #0A0711;
-    --oxblood: #961E1E;
-    --ember: #C85B29;
-    --smoke-violet: #3C3642;
-    --bone: #E5DDD1;
-    --text-bone: #DBDFDC;
-    --muted-gold: #B89A5A;
+--obsidian: #0A0711;
+--oxblood: #961E1E;
+--ember: #C85B29;
+--smoke-violet: #3C3642;
+--bone: #E5DDD1;
+--text-bone: #DBDFDC;
+--muted-gold: #B89A5A;
 
 /*----------FONTS----------*/
     --font-header: 'Trajan Pro', serif;
     --font-body: "Roboto", "Open Sans", sans-serif;
 
-/*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
-    Title                                       35pt
-    Headers		                Inter Bold      27pt
-	Menu Descriptions and p     Roboto regular  12pt
-	Online Menu		            Roboto regular  16pt
-*/
 }
 
+body {
+    font-family: var(---font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    font-family: var(--font-header);
+    text-decoration: none;
+    font-weight: 700;
+}
 
 
 
@@ -112,7 +123,7 @@ html {
         var(--obsidian) 40%, 
         var(--obsidian) 50%,
         var(--obsidian) 100%
-    );
+        );
 }
 
 body {
@@ -122,59 +133,50 @@ body {
 }
 
     .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        line-height: 1.5;
-    }
-
-    header {
-        display: block;
-        padding: 0;
+        width: 100%;
+        max-width: none;
         margin: 0;
-        font-family: var(--font-header);
+        padding: 3rem 1.5rem;
+        box-sizing: border-box;
     }
 
-        h1 {
-            font-size: 35pt;
-            text-align: center;
-            font-family: var(--font-header);
-        }
+                header {
+                    background-color: var(--smoke-violet);
+                    border-bottom: 1px solid var(--muted-gold);
+                }
 
-        h2, h3 {
-            font-family: var(--font-header);
-        }
-
-        .title {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            padding: 20px 0;
-            margin: 0;
-            width: 100%;
-}
-
-            .logo-and-title {
-                display: flex;
-                padding-left: 20px;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
+                header .container.title {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                
+                .title {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    padding: 15px 0;
+                    width: 100%;
+                }
+                
+                .logo-and-title {
+                    display: flex;
+                    padding-left: 20px;
+                    align-items: center;
+                }
+                
                 .logo-and-title h1 {
-                    font-weight: bolder;
-                    font-size: 35pt;
+                    font-size: 2rem;
+                    margin: 0;
+                    color: var(--muted-gold);
+                    letter-spacing: 2px;
                 }
-
-                .logo-and-title p {
-                    font-size: var(--font-body);
-                }
-
+                
                 .logo-and-title img {
-                    width: 300px;
-                    height: auto;
+                    height: 100px;      
+                    width: auto;       
+                    display: block;
+                    max-width: 100%;  
                 }
-
 /*----------NAV----------*/
 
 .navigation {
@@ -183,7 +185,7 @@ body {
     text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
-    color: var(--text-bone);
+    color: var(--bone);
 }
 
     .navigation ul {
@@ -197,20 +199,19 @@ body {
         .navigation li {
             list-style: none;
             padding: 5px 20px;
-            background-color: var(--smoke-violet);
         }
 
         .navigation a, .navigation a:visited, .navigation a:active {
             display: block;
             padding: 10px 30px;
             text-decoration: none;
-            color: var(--muted-gold);
+            color: var(--bone);
             transition: background-color 0.5s;
         }
 
         .navigation li:hover, .navigation a:hover {
             color: var(--obsidian);
-            background-color: var(--muted-gold);
+            background-color: var(--ember);
         }
 
 #hamburger {
@@ -218,15 +219,19 @@ body {
 }
 
     .navigation label {
-        display: block;
-        order: 2;
-        cursor: pointer;
-        margin-right: 10px;
-        z-index: 101;
-        position: relative;
-        top: 0;
+        position: absolute; 
+        top: -20px;
         right: 0;
-        position: absolute;
+        margin-right: 10px;
+        order: 2;
+        z-index: 101;
+        cursor: pointer;
+        display: flex;      
+        align-items: center;  
+        width: 40px; 
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent; 
     }
 
     .navigation a {
@@ -236,22 +241,20 @@ body {
     .dropdown-nav {
         display: none;
         flex-direction: column;
-        position: static;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--obsidian);
+        position: absolute;
+        width: 100vw; 
+        top: 47px; 
+        right: 0;    
+        background-color: var(--smoke-violet);
         padding: 20px 0;
-        z-index: 100;
+        z-index: 101;
         box-sizing: border-box;
     }
-
     .dropdown-nav a {
         display: block;
         padding: 10px 0;
         text-decoration: none;
-        color: var(--muted-gold);
+        color: var(--blue);
         text-align: center;
     }
 
@@ -259,11 +262,7 @@ body {
         display: flex;
         visibility: visible;
         opacity: 1;
-        background-color: var(--black);
-    }
-
-    #hamburger:checked ~ .navigation ul {
-        display: none
+        background-color: var(--smoke-violet);
     }
 
     label span {
@@ -295,12 +294,28 @@ body {
         left: 0;
     }
 
+
+/* ---------HAMBURGER "X" ANIMATION ---------*/
+
+#hamburger:checked ~ label span {
+    background-color: transparent; 
+}
+
+#hamburger:checked ~ label span:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#hamburger:checked ~ label span:after {
+    top: 0;
+    transform: rotate(-45deg);
+} 
 /*----------FOOTER----------*/
 footer {
     padding: 20px;
     margin: 0;
     text-align: center;
-    color: var(--text-bone);
+    color: var(--bone);
 }
 
     .footer {
@@ -316,6 +331,7 @@ footer {
             text-align: center;
             font-size: 16pt;
             font-family: var(--font-header);
+            color: var(--muted-gold);
         }
 
         .footer h3 {
@@ -331,7 +347,7 @@ footer {
 
         .footer a {
             text-decoration: none;
-            color: var(--text-bone);
+            color: var(--bone);
         }
 
         .footer-address {
@@ -373,6 +389,7 @@ footer {
         }
 
 
+
 /* ==================================================
                     MEDIA STYLES
 ================================================== */
@@ -391,84 +408,72 @@ footer {
         margin: 0;
     }
 
-    header {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .navigation {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .navigation ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-
-    .navigation li {
-        white-space: nowrap;
-    }
-
-        .navigation a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: var(--muted-gold);
-            text-decoration: none;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        .navigation label {
-            display: none;
-        }
-
-        .navigation a:hover {
-            background-color: var(--muted-gold);
-            color: var(--obsidian);
-        }
-
-        #hamburger {
-            display: block;
-        }
-
-        #hamburger, .navigation label {
-            display: none;
-        }
-
-        .dropdown-nav {
-            display: flex !important;
-            position: static;
-            flex-direction: row;
-            background: none;
-            width: auto;
-        }
-
-
     .field {
         flex: 1 1 100%;
     }
 
     .booking-form button {
         width: 100%;
-        margin: 10px auto 0;
-        padding: 8px 20px;
-        max-width: 400px;
+        max-width: 200px;
     }
 
+/* NAV & FOOTER  */
 
-    .footer {
-        padding: 0 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
+.navigation li {
+    white-space: nowrap;
+}
 
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+
+.footer {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
 
 
             /* ----------MEDIA QUERIES (LARGE)---------- */
@@ -479,48 +484,66 @@ footer {
         margin: 0;
     }
 
-     #hamburger, .navigation label {
-        display: none;
-    }
-
-    .navigation {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .navigation ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-
-    .navigation li {
-        white-space: nowrap;
-    }
-
-
-    .navigation a {
-        padding: 10px 20px;
-        font-weight: normal;
-        text-align: center;
-        font-weight: normal;
-    }
-
-    .dropdown-nav {
-        position: static;
-        flex-direction: row;
-        background: none;
-        width: auto;
-        padding: 0;
-        max-width: 1200px;
-    }
-
     .booking-form {
         flex-wrap: wrap;
     }
 
-    .footer {
-        max-width: 1200px;
-        margin: 20px auto;
-    }
+/* NAV & FOOTER  */
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.navigation li {
+    white-space: nowrap;
+}
+
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+
+.footer {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+
