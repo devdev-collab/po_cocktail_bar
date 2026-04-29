@@ -159,13 +159,12 @@ header {
 
 .cocktail-card {
     min-width: 160px;
-    background-color: var(--oxblood);
+    background-color: var(--smoke-violet);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     scroll-snap-align: center;
-    /* Glowing Effect based on Ember brand color */
     box-shadow: 0 0 20px rgba(200, 91, 41, 0.7);
-    border: 1px solid var(--ember);
+    border: 1px solid var(--oxblood);
 }
 
 .card-img-placeholder {
@@ -183,6 +182,16 @@ header {
 .cocktail-card p {
     font-size: 0.8rem;
     line-height: 1.2;
+    margin: 0;
+}
+
+.cocktail-card p:first-of-type {
+    margin-bottom: .5rem; 
+}
+.cocktail-card p em {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-family: var(--font-header);
 }
 
 /* --- EVENTS --- */
@@ -279,9 +288,10 @@ header {
 .story-img-placeholder {
     width: 60%;
     height: 300px;
-    background-color: #ccc;
-    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px)), 
-                      linear-gradient(to bottom left, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px));
+    background-image: url('../images/BrandTeam2_GIT450_550_Po_Po_StonePrincess_V1.jpeg'); 
+    background-size: cover; 
+        background-position: center; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     margin: 0 auto 2rem auto;
     position: relative;
     top: 80px; 
@@ -368,6 +378,15 @@ footer a:hover {
         top: auto; 
         bottom: -300px; 
         right: -400px; 
+    }
+
+    .story-img-placeholder {
+        width: 80%;
+        max-width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        top: 0; 
+        background-image: url('../images/BrandTeam2_GIT450_550_Po_VolcanicSurfaceBackground_V1.png'); 
     }
 }
 @media screen and (min-width: 600px) {

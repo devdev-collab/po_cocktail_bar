@@ -119,10 +119,10 @@ html {
     min-width: 400px;
     background: linear-gradient(
         to bottom, 
-        var(--viole) 0%,
-        var(--uliuli) 40%, 
-        var(--uliuli) 50%,
-        var(--uliuli) 100%
+        var(--smoke-violet) 0%,
+        var(--obsidian) 40%, 
+        var(--obsidian) 50%,
+        var(--obsidian) 100%
         );
 }
 
@@ -175,7 +175,12 @@ body {
                 .logo-and-title p {
                     font-size: var(--font-body);
                 }
-
+                .logo-and-title img {
+                    height: 60px;      
+                    width: auto;       
+                    display: block;
+                    max-width: 100%;  
+                }
 /*----------NAV----------*/
 
 .navigation {
