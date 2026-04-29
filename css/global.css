@@ -200,12 +200,12 @@ body {
             display: block;
             padding: 10px 30px;
             text-decoration: none;
-            color: var(--blue);
+            color: var(--bone);
             transition: background-color 0.5s;
         }
 
         .navigation li:hover, .navigation a:hover {
-            color: var(--black);
+            color: var(--obsidian);
             background-color: var(--ember);
         }
 
