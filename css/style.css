@@ -199,13 +199,13 @@ body {
             display: block;
             padding: 10px 30px;
             text-decoration: none;
-            color: var(--oxblood);
+            color: var(--muted-gold);
             transition: background-color 0.5s;
         }
 
         .navigation li:hover, .navigation a:hover {
             color: var(--obsidian);
-            background-color: var(--oxblood);
+            background-color: var(--muted-gold);
         }
 
 #hamburger {
@@ -246,7 +246,7 @@ body {
         display: block;
         padding: 10px 0;
         text-decoration: none;
-        color: var(--oxblood);
+        color: var(--muted-gold);
         text-align: center;
     }
 
@@ -603,7 +603,7 @@ header {
         .navigation a {
             display: inline-block;
             padding: 10px 20px;
-            color: var(--oxblood);
+            color: var(--muted-gold);
             text-decoration: none;
             font-weight: normal;
             text-align: center;
@@ -614,7 +614,7 @@ header {
         }
 
         .navigation a:hover {
-            background-color: var(--oxblood);
+            background-color: var(--muted-gold);
             color: var(--obsidian);
         }
 
