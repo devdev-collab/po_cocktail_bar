@@ -335,12 +335,13 @@ footer {
             text-align: center;
             font-size: 16pt;
             font-family: var(--font-header);
+            color: var(--muted-gold);
         }
 
         .footer h3 {
             font-size: 14pt;
             font-family: var(--font-header);
-            color: var(--enaena);
+            color: var(--muted-gold);
         }
 
         .footer p {
