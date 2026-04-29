@@ -223,11 +223,23 @@ header {
     text-align: left;
 }
 
-.event-img-placeholder {
+.event-img1 {
     width: 80px;
     height: 80px;
-    background-color: #ccc;
-    flex-shrink: 0;
+    background-image: url('../images/Jazz band.png'); 
+    background-size: cover;     flex-shrink: 0;
+}
+.event-img2 {
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/fire dance.png'); 
+    background-size: cover;     flex-shrink: 0;
+}
+.event-img3 {
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/dancers.png'); 
+    background-size: cover;     flex-shrink: 0;
 }
 
 .event-details .date {
