@@ -1,0 +1,381 @@
+html {
+    min-width: 400px;
+    background-color: var(--obsidian);
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--text-bone);
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--bone);
+}
+
+nav a, a {
+    text-decoration: none;
+    color: var(--text-bone);
+}
+
+.container {
+    width: 100%;
+    max-width: none; 
+    margin: 0;
+    padding: 3rem 1.5rem; 
+    box-sizing: border-box;
+}
+
+/* Specific fix for the header to keep it flush */
+header .container.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--obsidian);
+    color: var(--bone);
+    border: 1px solid var(--bone);
+    margin-top: 1rem;
+}
+
+.btn-secondary {
+    background-color: var(--bone);
+    color: var(--obsidian);
+    margin: 2rem auto;
+    display: block;
+    width: max-content;
+}
+
+/* ==================================================
+                    HEADER & NAV
+================================================== */
+header {
+    background-color: var(--smoke-violet);
+    border-bottom: 1px solid var(--muted-gold);
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.logo-and-title {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.logo-and-title h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--muted-gold);
+    letter-spacing: 2px;
+}
+
+.logo-and-title img {
+    height: 60px;      
+    width: auto;       
+    display: block;
+    max-width: 100%;  
+}
+
+/* ==================================================
+                    MAIN CONTENT SECTIONS
+================================================== */
+
+/* --- HERO --- */
+.hero-container-full {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('../images/Photo_Video_GIT450_Bar_V1.png');
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(10, 7, 17, 0.85);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- COCKTAILS (HORIZONTAL SCROLL) --- */
+.menu {
+    padding: 3rem 0;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    mask-type: x mandatory;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for cleaner mobile look */
+}
+
+.cocktail-card {
+    min-width: 160px;
+    background-color: var(--oxblood);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    scroll-snap-align: center;
+    /* Glowing Effect based on Ember brand color */
+    box-shadow: 0 0 20px rgba(200, 91, 41, 0.7);
+    border: 1px solid var(--ember);
+}
+
+.card-img-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    margin: 0 auto 1rem;
+}
+
+.cocktail-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cocktail-card p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+/* --- EVENTS --- */
+.events {
+    padding: 3rem 1.5rem;
+    background: 
+        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+        url('../images/Asset 1.png'); 
+    
+    background-repeat: repeat;
+    background-size: 600px; /* Adjust this number to scale the pattern up or down */
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(10, 7, 17, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.event-img-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    flex-shrink: 0;
+}
+
+.event-details .date {
+    font-weight: bold;
+    color: var(--muted-gold);
+    margin-bottom: 0.2rem;
+}
+
+.event-details .name {
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    color: var(--bone);
+    margin-bottom: 0.2rem;
+}
+
+.event-details .cost {
+    font-size: 0.85rem;
+}
+
+/* --- OUR STORY --- */
+
+.story {
+    position: relative;
+    padding: 5rem 1.5rem 8rem 1.5rem;
+    background: 
+        linear-gradient(to top, var(--oxblood) 250px, transparent 250px),
+        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+        url('../images/Asset 1.png');
+    background-size: auto, auto, 600px; 
+    background-repeat: repeat;
+    
+    overflow: hidden; 
+    z-index: 1;
+}
+
+
+.story::before {
+    content: "";
+    position: absolute;
+    background-color: var(--oxblood); 
+    border-radius: 50%;   
+    width: 500px; 
+    height: 500px;
+    top: 70px; 
+    right: -250px; 
+    
+    z-index: -1; 
+}
+
+.story-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    top: 80px; 
+}
+
+.story-img-placeholder {
+    width: 60%;
+    height: 300px;
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px)), 
+                      linear-gradient(to bottom left, transparent calc(50% - 1px), var(--smoke-violet) 50%, transparent calc(50% + 1px));
+    margin: 0 auto 2rem auto;
+    position: relative;
+    top: 80px; 
+    z-index: 2;
+}
+
+/* ==================================================
+                    FOOTER
+================================================== */
+footer {
+    background-color: var(--obsidian);
+    padding: 3rem 1.5rem;
+    border-top: 1px solid var(--smoke-violet);
+    text-align: left;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+}
+
+.footer-address h2, .footer-social h2 {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin-bottom: 0.8rem;
+}
+
+.footer-subhead, .footer-contact-head {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+    color: var(--ember);
+}
+
+/* ==================================================
+                    MEDIA QUERIES
+================================================== */
+
+@media screen and (min-width: 900px) {
+    .story {
+        padding: 8rem 1.5rem 200px 1.5rem;
+        background: 
+            linear-gradient(to top, var(--oxblood) 200px, transparent 200px),
+            linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
+            url('../images/Asset 1.png'); 
+        background-size: auto, auto, 600px;
+    }
+
+    .story-img-placeholder {
+        width: 80%;
+        max-width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        top: 0; 
+    }
+
+    .story-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 800px;
+        height: 200px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        top: auto; 
+    }
+
+    .story::before {
+        width: 1000px; 
+        height: 1000px;
+        top: auto; 
+        bottom: -300px; 
+        right: -400px; 
+    }
+}
+@media screen and (min-width: 600px) {
+    /* FOOTER FLEX FOR TABLET/DESKTOP */
+    .footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+}
