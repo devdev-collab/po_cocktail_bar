@@ -33,16 +33,6 @@ header, main, footer {
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* ==================================================
-                    MENU SECTION
-================================================== */
-
-.menu {
     text-align: center;
     padding: 3rem 1.5rem;
     background: 
@@ -51,6 +41,11 @@ main {
     background-repeat: repeat;
     background-size: 600px;
 }
+
+/* ==================================================
+                    MENU SECTION
+================================================== */
+
 
 .menu h1 {
     font-family: var(--font-header);
