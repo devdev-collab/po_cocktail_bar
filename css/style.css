@@ -170,6 +170,11 @@ body {
                     font-size: var(--font-body);
                 }
 
+                .logo-and-title img {
+                    width: 40px;
+                    height: auto;
+                }
+
 /*----------NAV----------*/
 
 .navigation {
