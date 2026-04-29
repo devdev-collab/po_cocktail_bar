@@ -1,7 +1,6 @@
  /* ==================================================
                     CSS INFO
 ================================================== */
-/* ----------CSS BY ANGELA ROQUE---------- */
 /* GIT 450-550: CREATIVE TEAM AND PROCESS WORKFLOW */
 /* MODULE 5: 5.6 REVISIONS ROUND2 */
 /* For educational purposes only. */
@@ -87,12 +86,6 @@ table {
     --font-header: 'Trajan Pro', serif;
     --font-body: "Roboto", "Open Sans", sans-serif;
 
-/*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
-    Title                                       35pt
-    Headers		                Inter Bold      27pt
-	Menu Descriptions and p     Roboto regular  12pt
-	Online Menu		            Roboto regular  16pt
-*/
 }
 
 body {
@@ -191,7 +184,7 @@ body {
     text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
-    color: white;
+    color: var(--bone);
 }
 
     .navigation ul {
@@ -205,7 +198,6 @@ body {
         .navigation li {
             list-style: none;
             padding: 5px 20px;
-            background-color: var(--viole);
         }
 
         .navigation a, .navigation a:visited, .navigation a:active {
@@ -218,7 +210,7 @@ body {
 
         .navigation li:hover, .navigation a:hover {
             color: var(--black);
-            background-color: var(--blue);
+            background-color: var(--ember);
         }
 
 #hamburger {
@@ -226,15 +218,19 @@ body {
 }
 
     .navigation label {
-        display: block;
-        order: 2;
-        cursor: pointer;
-        margin-right: 10px;
-        z-index: 101;
-        position: relative;
-        top: 0;
+        position: absolute; 
+        top: -20px;
         right: 0;
-        position: absolute;
+        margin-right: 10px;
+        order: 2;
+        z-index: 101;
+        cursor: pointer;
+        display: flex;      
+        align-items: center;  
+        width: 40px; 
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent; 
     }
 
     .navigation a {
@@ -244,17 +240,15 @@ body {
     .dropdown-nav {
         display: none;
         flex-direction: column;
-        position: static;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--black);
+        position: absolute;
+        width: 100vw; 
+        top: 47px; 
+        right: 0;    
+        background-color: var(--smoke-violet);
         padding: 20px 0;
-        z-index: 100;
+        z-index: 101;
         box-sizing: border-box;
     }
-
     .dropdown-nav a {
         display: block;
         padding: 10px 0;
@@ -267,15 +261,11 @@ body {
         display: flex;
         visibility: visible;
         opacity: 1;
-        background-color: var(--black);
-    }
-
-    #hamburger:checked ~ .navigation ul {
-        display: none
+        background-color: var(--smoke-violet);
     }
 
     label span {
-        background-color: white;
+        background-color: var(--bone);
         display: block;
         height: .25rem;
         position: relative;
@@ -284,7 +274,7 @@ body {
     }
 
     label span:before, label span:after {
-        background: white;
+        background: var(--bone);
         content: '';
         display: block;
         height: 100%;
@@ -304,22 +294,98 @@ body {
     }
 
 
-/* ----------FOOTER----------*/
-.footer {
-    color: white;
-    padding: 30px;
-}
-            
-.footer h2 {
-    font-size: 16pt;
-    font-family: var(--font-header);
-    text-align: center;
+/* ---------HAMBURGER "X" ANIMATION ---------*/
+
+#hamburger:checked ~ label span {
+    background-color: transparent; 
 }
 
-.footer p {
-    font-size: 12pt;
-    font-family: var(--font-body);
+#hamburger:checked ~ label span:before {
+    top: 0;
+    transform: rotate(45deg);
 }
+
+#hamburger:checked ~ label span:after {
+    top: 0;
+    transform: rotate(-45deg);
+} 
+/*----------FOOTER----------*/
+footer {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: var(--bone);
+}
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: auto;
+    }
+
+        .footer h2 {
+            text-align: center;
+            font-size: 16pt;
+            font-family: var(--font-header);
+        }
+
+        .footer h3 {
+            font-size: 14pt;
+            font-family: var(--font-header);
+            color: var(--enaena);
+        }
+
+        .footer p {
+            font-size: 12pt;
+            font-family: var(--font-body);
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: var(--bone);
+        }
+
+        .footer-address {
+            grid-column: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-social {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+
+        .footer-social h2 {
+            margin-top: 0;
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .footer-social p {
+            margin: 5px 0;
+        }
+
+        .footer-address, .footer-social {
+            display: block;
+            text-align: center;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer a:hover {
+            color: var(--ember);
+        }
+
 
 
 /* ==================================================
