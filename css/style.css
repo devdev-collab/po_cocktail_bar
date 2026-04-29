@@ -75,17 +75,18 @@ table {
 :root {
 
 /*----------COLOR----------*/
-    --samasama: #F7931E;
-	--lanumoli: #F15A24;
-	--efuefu: #534741;
-	--viole: #572235;
-	--uliuli: #000000;
-	--enaena: #998675;
-	--lanumumu: #C93E3E;
+    /*----------COLOR----------*/
+    --obsidian: #0A0711;
+    --oxblood: #961E1E;
+    --ember: #C85B29;
+    --smoke-violet: #3C3642;
+    --bone: #E5DDD1;
+    --text-bone: #DBDFDC;
+    --muted-gold: #B89A5A;
 
 /*----------FONTS----------*/
-    --font-header: "Trajan Pro", "Roboto", "Inter";
-    --font-body: "Roboto", "Inter", sans-serif;
+    --font-header: 'Trajan Pro', serif;
+    --font-body: "Roboto", "Open Sans", sans-serif;
 
 /*  FOR CONSISTENT FONT SIZES THROUGHOUT THE PAGE
     Title                                       35pt
@@ -107,11 +108,11 @@ html {
     min-width: 400px;
     background: linear-gradient(
         to bottom, 
-        var(--viole) 0%,
-        var(--uliuli) 40%, 
-        var(--uliuli) 50%,
-        var(--uliuli) 100%
-        );
+        var(--smoke-violet) 0%,
+        var(--obsidian) 40%, 
+        var(--obsidian) 50%,
+        var(--obsidian) 100%
+    );
 }
 
 body {
@@ -177,7 +178,7 @@ body {
     text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
-    color: white;
+    color: var(--text-bone);
 }
 
     .navigation ul {
@@ -191,20 +192,20 @@ body {
         .navigation li {
             list-style: none;
             padding: 5px 20px;
-            background-color: var(--viole);
+            background-color: var(--smoke-violet);
         }
 
         .navigation a, .navigation a:visited, .navigation a:active {
             display: block;
             padding: 10px 30px;
             text-decoration: none;
-            color: var(--blue);
+            color: var(--oxblood);
             transition: background-color 0.5s;
         }
 
         .navigation li:hover, .navigation a:hover {
-            color: var(--black);
-            background-color: var(--blue);
+            color: var(--obsidian);
+            background-color: var(--oxblood);
         }
 
 #hamburger {
@@ -235,7 +236,7 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--black);
+        background-color: var(--obsidian);
         padding: 20px 0;
         z-index: 100;
         box-sizing: border-box;
@@ -245,7 +246,7 @@ body {
         display: block;
         padding: 10px 0;
         text-decoration: none;
-        color: var(--blue);
+        color: var(--oxblood);
         text-align: center;
     }
 
@@ -261,7 +262,7 @@ body {
     }
 
     label span {
-        background-color: white;
+        background-color: var(--bone);
         display: block;
         height: .25rem;
         position: relative;
@@ -270,7 +271,7 @@ body {
     }
 
     label span:before, label span:after {
-        background: white;
+        background: var(--bone);
         content: '';
         display: block;
         height: 100%;
@@ -294,7 +295,7 @@ footer {
     padding: 20px;
     margin: 0;
     text-align: center;
-    color: white;
+    color: var(--text-bone);
 }
 
     .footer {
@@ -315,7 +316,7 @@ footer {
         .footer h3 {
             font-size: 14pt;
             font-family: var(--font-header);
-            color: var(--enaena);
+            color: var(--muted-gold);
         }
 
         .footer p {
@@ -325,7 +326,7 @@ footer {
 
         .footer a {
             text-decoration: none;
-            color: white;
+            color: var(--text-bone);
         }
 
         .footer-address {
@@ -363,7 +364,7 @@ footer {
         }
 
         .footer a:hover {
-            color: #f39c12;
+            color: var(--ember);
         }
          
 
@@ -389,7 +390,7 @@ header {
     .main-title h1{
         font-family: var(--font-header);
         font-size: 35pt;
-        color: white;
+        color: var(--text-bone);
     }
             /* ----------ADDRESS----------*/
 .address {
@@ -413,7 +414,7 @@ header {
         object-fit: cover;
         border-radius: 50%;
         grid-row: 1 / 3;
-        background-color: var(--viole);
+        background-color: var(--smoke-violet);
         padding: 30px;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -423,13 +424,13 @@ header {
         grid-column: 1 / 6;
         grid-row-start: 1;
         grid-row-end: 4;
-        color: white;
+        color: var(--bone);
         display: flex;
         flex-direction: column;
         gap: 8px;
         padding: 60px;
         margin: 40px 0;
-        background-color: var(--viole);
+        background-color: var(--smoke-violet);
     }
 
     #address-content {
@@ -457,20 +458,20 @@ header {
         width: 140px;
         margin: 10px auto 0;
         padding: 8px 20px;
-        background-color: var(--samasama);
-        color: white;
+        background-color: var(--muted-gold);
+        color: var(--bone);
         text-decoration: none;
         border-radius: 5px;
         font-size: 16pt;
     }
 
     .address-wrapper a:hover {
-        background-color: var(--lanumoli);
+        background-color: var(--ember);
     }
 
             /* ----------BOOKING----------*/
 .booking {
-    color: white;
+    color: var(--bone);
     padding: 30px;
 }
             
@@ -509,9 +510,9 @@ header {
 .field select {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--viole);
-    color: white;
-    border: 1px solid var(--viole);
+    background-color: var(--smoke-violet);
+    color: var(--bone);
+    border: 1px solid var(--smoke-violet);
     padding: 10px 8px;
     font-size: 11pt;
     border-radius: 5px;
@@ -522,7 +523,7 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: white;
+    color: var(--bone);
     opacity: 0.7;
     font-size: 11pt;
     pointer-events: none;
@@ -535,7 +536,7 @@ header {
     top: -10px;
     font-size: 10pt;
     opacity: 1;
-    background: var(--viole);
+    background: var(--smoke-violet);
     padding: 0 5px;
 }
 
@@ -544,16 +545,16 @@ header {
     width: 140px;
     margin: 10px auto 0;
     padding: 8px 20px;
-    background-color: var(--samasama);
+    background-color: var(--muted-gold);
     border: none;
-    color: white;
+    color: var(--bone);
     font-size: 16pt;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .booking-form button:hover {
-        background-color: var(--lanumoli);
+        background-color: var(--ember);
     }
 
 /* ----------FOOTER----------*/
@@ -602,7 +603,7 @@ header {
         .navigation a {
             display: inline-block;
             padding: 10px 20px;
-            color: var(--blue);
+            color: var(--oxblood);
             text-decoration: none;
             font-weight: normal;
             text-align: center;
@@ -613,8 +614,8 @@ header {
         }
 
         .navigation a:hover {
-            background-color: var(--blue);
-            color: var(--black)
+            background-color: var(--oxblood);
+            color: var(--obsidian);
         }
 
         #hamburger {
