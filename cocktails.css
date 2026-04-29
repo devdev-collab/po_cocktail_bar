@@ -57,11 +57,7 @@ main {
     gap: 20px;
     text-align: center;
     padding: 3rem 1.5rem;
-    background: 
-        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
-        url('../images/Asset 1.png'); 
-    background-repeat: repeat;
-    background-size: 600px;
+
 }
 
 /* Optional scrollbar styling */
