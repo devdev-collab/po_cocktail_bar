@@ -196,3 +196,65 @@ header {
     }
 
 /* ----------FOOTER----------*/
+
+
+
+
+
+
+/* ==================================================
+                    MEDIA STYLES
+================================================== */
+
+/*----------(MOBILE FIRST (SMALL QUERIES) applies to the whole page)----------*/
+
+
+
+
+
+
+            /* ----------MEDIA QUERIES (MEDIUM)---------- */
+@media screen and (min-width: 600px){
+    .address-wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #address-content {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .address-wrapper a {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .booking-form {
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+}
+
+
+
+@media screen and (min-width: 900px) {
+.address-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .booking {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .booking-form {
+        justify-content: space-between;
+    }
+
+    .field {
+        flex: 1 1 200px;
+    }
+}
