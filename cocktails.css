@@ -31,19 +31,17 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-
-.menu {
     background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png');
     background-repeat: repeat;
     background-size: 600px;
 }
 
+
 .menu h1 {
     font-family: var(--font-header);
     font-size: 35pt;
-    margin-bottom: 40px;
+    background-color: var(--obsidian);
+    padding: 30px;
 }
 
 /* ---------- CAROUSEL ---------- */
