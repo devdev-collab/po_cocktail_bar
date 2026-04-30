@@ -68,7 +68,7 @@ main {
 }
 
 .gallery h2 {
-    font: var(--font-header);
+    font-family: var(--font-header);
     font-size: 27px;
     margin-bottom: 30px;
 }
