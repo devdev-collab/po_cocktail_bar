@@ -41,6 +41,7 @@ header {
     background-repeat: repeat;
     background-size: 600px;
     margin: 0 auto;
+    border-bottom: none;
 }
 
 /* ==================================================
