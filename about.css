@@ -94,6 +94,11 @@ main {
     height: 175px;
 }
 
+    /* Footer */
+footer {
+    background-color: var(--obsidian);
+}
+
 
 /* Media Queries */
 
