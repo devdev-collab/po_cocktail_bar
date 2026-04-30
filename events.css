@@ -73,7 +73,7 @@ h2 {
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 3rem;
     mask-type: x mandatory;
 }
 
