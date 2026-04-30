@@ -214,6 +214,11 @@ header .container.title {
     background-size: 600px; /* Adjust this number to scale the pattern up or down */
 }
 
+.events h2 {
+    font-family: var(--font-header);
+    font-size: 27pt;
+}
+
 .event-list {
     display: flex;
     flex-direction: column;
