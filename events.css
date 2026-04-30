@@ -74,6 +74,7 @@ h2 {
     gap: 1.5rem;
     padding: 1rem 1.5rem 3rem;
     mask-type: x mandatory;
+    justify-content: space-evenly;
 }
 
 .carousel-container::-webkit-scrollbar {
