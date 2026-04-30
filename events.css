@@ -180,7 +180,8 @@ footer {
     background-color: var(--obsidian);
     padding: 3rem 1.5rem;
     border-top: 1px solid var(--smoke-violet);
-    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-grid {
