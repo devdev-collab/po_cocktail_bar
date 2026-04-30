@@ -88,12 +88,12 @@ h2 {
 }
 
 .calendar-card h2 {
-    font-size: 1.1rem;
+    font-size: 16pt;
     margin-bottom: 0.5rem;
 }
 
 .calendar-card p {
-    font-size: 0.8rem;
+    font-size: 12pt;
     line-height: 1.2;
     margin: 0;
 }
@@ -103,7 +103,7 @@ h2 {
 }
 
 .calendar-card p em {
-    font-size: 0.9rem;
+    font-size: 14pt;
     font-style: italic;
     font-family: var(--font-header);
 }
