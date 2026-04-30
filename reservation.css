@@ -12,7 +12,7 @@
 
 /* ----------HEADER----------*/
 header {
-    background-color: var(--smoke-violet);
+    background-color: none;
     background-size: 600px;
     max-width: 1250px;
     margin: 0 auto;
