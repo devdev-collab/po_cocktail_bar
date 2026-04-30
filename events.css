@@ -79,11 +79,11 @@ h2 {
 .calendar-card {
     width: 200px; 
     flex-shrink: 0;
-    background-color: var(--smoke-violet);
+    background-color: var(--obsidian);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     scroll-snap-align: center;
-    box-shadow: 0 0 20px rgba(200, 91, 41, 0.7);
+    box-shadow: 0 0 20px var(--oxblood);
     border: 1px solid var(--oxblood);
 }
 
