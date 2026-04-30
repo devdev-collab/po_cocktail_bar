@@ -28,8 +28,8 @@ nav a, a {
 
 .container {
     width: 100%;
-    max-width: none; 
-    margin: 0;
+    max-width: 1200px; 
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
