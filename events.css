@@ -34,30 +34,7 @@ header .container.title {
 
 /* --- MAIN CONTENT SECTIONS --- */
 
-/* HERO */
-.hero {
-    width: 100%;
-    height: 60vh;
-    min-height: 400px;
-    background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('../images/Photo_Video_GIT450_Bar_V1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero-content {
-    background-color: rgba(10, 7, 17, 0.85);
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
 
 /* CALENDAR (HORIZONTAL SCROLL) */
 .menu {
@@ -88,15 +65,7 @@ header .container.title {
     border: 1px solid var(--oxblood);
 }
 
-.card-img-1, .card-img-2, .card-img-3, .card-img-4, .card-img-5, .card-img-6 {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-
-.calendar-card h3 {
+.calendar-card h2 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
