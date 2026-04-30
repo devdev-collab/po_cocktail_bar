@@ -68,7 +68,12 @@ h2 {
 }
 
 .carousel-container::-webkit-scrollbar {
-    display: none;
+    height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background: var(--ember);
+    border-radius: 10px;
 }
 
 .calendar-card {
