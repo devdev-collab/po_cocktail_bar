@@ -12,7 +12,7 @@
 
 /* ----------HEADER----------*/
 header {
-    background: none;
+    background-color: var(--smoke-violet);
 }
 
 /* ----------MAIN----------*/
