@@ -64,7 +64,6 @@ header .container.title {
 .calendar-card {
     width: 200px; 
     flex-shrink: 0;
-    height: 240px;
     background-color: var(--smoke-violet);
     padding: 1.5rem 1rem;
     border-radius: 12px;
