@@ -97,7 +97,7 @@ main {
     /* Footer */
 footer {
     background-color: var(--obsidian);
-    border-top: var(--muted-gold);
+    border-top-color: var(--muted-gold);
 }
 
 
