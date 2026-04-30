@@ -1,167 +1,156 @@
-<!--HTML BY TEAM 4: WEB-DEV TEAM - ANGELA ROQUE-->
+  <!--HTML BY TEAM 4: WEB-DEV TEAM - ANGELA ROQUE, UPDATED BY RUPAK ACHARYA-->
 <!--GIT 450-550: CREATIVE TEAM AND PROCESS WORKFLOW-->
-
 
 <!DOCTYPE html>
 <html lang="en">
-<!--========================================
-                    HEAD ELEMENTS
-========================================-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Po- The dark realm where gods and spirits meet">
-        <meta name="keywords" content="business, Polynesian bar, speakeasy, cocktail bar, tiki experience, exotic cocktails">
-        
-        <title>Lab 5.6: Revisions Round 2</title>
-        <meta name="author" content="Angela Roque">
-        <link rel="stylesheet" href="css/global.css">
-    
-        <link rel="stylesheet" href="reservation.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pō reservation page for booking a table at an immersive Polynesian cocktail lounge.">
+    <meta name="keywords" content="business, Polynesian bar, speakeasy, cocktail bar, tiki experience, exotic cocktails">
 
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        
-    </head>
+    <title>Pō Cocktail Lounge | Reservation</title>
+ 
+    <meta name="author" content="Angela Roque Rupak, Acharya">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
 
-<!--SELF NOTE important!!!! . is class selector and # is id selector for css-->
-<!--     So for example for section class="Artisan-Provisions", the css selector would be .Artisan--Provisions      -->
-<!--     So for example for section id="About-Us",              the css selector would be #About-Us                 -->
+<body>
 
+<header>
+    <div class="container title">
+        <div class="logo-and-title">
+            <img src="images/Po-Horizontal.png" alt="Pō logo">
+        </div>
 
-    <body>
-<!--========================================
-                    HEADER ELEMENTS
-========================================-->
+        <nav class="navigation">
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger"><span></span></label>
+            <ul class="dropdown-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="cocktails.html">Cocktails</a></li>
+                <li><a href="events.html">Event Calendar</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <header>
-            <div class="container title">
-                <div class="logo-and-title">
-                    <img src="images/Po-Horizontal.png" alt="po logo">
-                </div>
+<main>
 
-                <nav class="navigation">
-                    <input type="checkbox" id="hamburger">
-                    <label for="hamburger"><span></span></label>
-                    <ul class="dropdown-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Our Story</a></li>
-                        <li><a href="cocktails.html">Cocktails</a></li>
-                        <li><a href="events.html">Event Calendar</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
-                    </ul>
-                </nav>
+    <section class="reservation-hero">
+        <div class="reservation-hero-content">
+            <h1>Reservations</h1>
+            <p>Reserve your table and step into the hidden world of Pō.</p>
+            <a href="#reservation-booking" class="hero-button">Book a Table</a>
+        </div>
+    </section>
 
-            </div>
-        </header>
-
-        <main>
-
-            <div class="container main-title">
-                <h1>Reservations</h1>
+    <section class="address">
+        <div class="address-wrapper">
+            <div class="address-image">
+                <img src="images/Po-icon-seal.png" alt="Pō icon seal">
             </div>
 
-            <div class="container address">
-                <div class="address-wrapper">
+            <div class="address-content">
+                <h2>Pō</h2>
+                <p>543 Tiki Vicks Lounge, Cocktail Road, HI 20026</p>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </section>
 
-                    <!--Add image-->
-                    <img src="" alt="">
+    <section class="booking" id="reservation-booking">
+        <h2>Book a Table</h2>
 
-                    <section id="address-bar">
-                    </section>
-
-                    <section id="address-content">
-                        <h2>P&omacr;</h2>
-                        <p>543 Tiki Vicks Lounge, Cocktail Road, HI 20026</p>
-                    </section>
-
-                    <a href="">Contact Us</a>
-                </div>
+        <form class="booking-form">
+            <div class="field">
+                <input type="date" id="date" required>
+                <label for="date">Date</label>
             </div>
 
-            <div class="container booking">
-                <section id="reservation-booking">
-                    <h3>Book a Table</h3>
-                        <form class="booking-form">
-
-                            <div class="field">
-                                <input type="date" id="date" required>
-                                <label for="date"></label>
-                            </div>
-
-                            <div class="field">
-                                <select id="guests" required>
-                                    <option value=""></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4+</option>
-                                </select>
-                                <label for="guests">Guests</label>
-                            </div>
-
-                            <div class="field">
-                                <select id="location" required>
-                                    <option value=""></option>
-                                    <option value="indoor">Indoor</option>
-                                    <option value="outdoor">Outdoor</option>
-                                    <option value="bar">Bar</option>
-                                    <option value="no preference">No Preference</option>
-                                </select>
-                                <label for="location">Location</label>
-                            </div>
-
-                            <div class="field">
-                                <input type="text" id="requests" placeholder="">
-                                <label for="requests">Requests</label>
-                            </div>
-
-                            <button type="submit">Book</button>
-
-                        </form>
-
-                    <img src="images/Photo_Video_GIT450_Bar_V1.png" alt="indoor bar seating">
-                    <h3>Indoor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <img src="images/Photo_Video_GIT450_Bar_V1.png" alt="outdoor bar seating">
-                    <h3>Outdoor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
-                    <img src="images/Photo_Video_GIT450_Bar_V1.png" alt="bar seating">
-                    <h3>Bar</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                </section>
+            <div class="field">
+                <select id="guests" required>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+                <label for="guests">Guests</label>
             </div>
 
-        </main>
-
-<!--========================================
-                    FOOTER ELEMENTS
-========================================-->
-
-        <footer>
-            <div class="container footer">
-                <section class="footer-address">
-                    <h2>Tiki Vicks</h2>
-                        <h3>Address</h3>
-                        <p><a href="">543 Tiki Vicks Lounge, Cocktail Road, HI 20026</a></p>
-                        <br>
-                        <h3>Hours of Operation</h3>
-                        <p>OPEN EVERYDAY | 11AM-12AM</p>
-                </section>
-
-                <section class="footer-social">
-                    <h2>Follow Us</h2>
-                    <p><a href="">Instagram</a></p>
-                    <p><a href="">Facebook</a></p>
-                    <br>
-                    <h2>Contact</h2>
-                    <p><a href="">(450) 550-2026</a></p>
-                </section>
+            <div class="field">
+                <select id="location" required>
+                    <option value=""></option>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="bar">Bar</option>
+                    <option value="no-preference">No Preference</option>
+                </select>
+                <label for="location">Location</label>
             </div>
-        </footer>
 
-    </body>
+            <div class="field request-field">
+                <input type="text" id="requests" placeholder=" ">
+                <label for="requests">Requests</label>
+            </div>
 
+            <button type="submit">Book</button>
+        </form>
+    </section>
+
+    <section class="seating-options">
+        <h2>Choose Your Experience</h2>
+
+        <div class="seating-grid">
+            <div class="seating-card">
+                <img src="images/Photo_Video_GIT450_Bar_V1.png" alt="Indoor bar seating">
+                <h3>Indoor</h3>
+                <p>Enjoy a warm and intimate space surrounded by low lighting, rich textures, and the atmosphere of Pō.</p>
+            </div>
+
+            <div class="seating-card">
+                <img src="images/BrandTeam2_GIT450_550_Po_Bar01_V1.jpg" alt="Outdoor lounge seating">
+                <h3>Outdoor</h3>
+                <p>Relax in a comfortable lounge setting with island-inspired details and a calm evening mood.</p>
+            </div>
+
+            <div class="seating-card">
+                <img src="images/BrandTeam2_GIT450_550_Po_Bar02_V1.jpg" alt="Bar seating">
+                <h3>Bar</h3>
+                <p>Sit close to the craft and energy of the bar while watching each cocktail come to life.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer">
+        <section class="footer-address">
+            <h2>Tiki Vicks</h2>
+            <h3>Address</h3>
+            <p><a href="">543 Tiki Vicks Lounge, Cocktail Road, HI 20026</a></p>
+            <br>
+            <h3>Hours of Operation</h3>
+            <p>OPEN EVERYDAY | 11AM-12AM</p>
+        </section>
+
+        <section class="footer-social">
+            <h2>Follow Us</h2>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Facebook</a></p>
+            <br>
+            <h2>Contact</h2>
+            <p><a href="">(450) 550-2026</a></p>
+        </section>
+    </div>
+</footer>
+
+</body>
 </html>
+
