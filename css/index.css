@@ -71,6 +71,10 @@ header .container.title {
 /* ==================================================
                     MAIN CONTENT SECTIONS
 ================================================== */
+/* --- HEADER --- */
+header {
+    margin: 0 auto;
+}
 
 /* --- HERO --- */
 .hero-container-full {
