@@ -26,66 +26,21 @@ nav a, a {
     color: var(--text-bone);
 }
 
-.container {
-    width: 100%;
-    max-width: none; 
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Specific fix for the header to keep it flush */
+/* --- HEADER --- */
 header .container.title {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-/* --- BUTTONS --- */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-family: var(--font-body);
-    transition: all 0.3s ease;
-}
+/* --- MAIN CONTENT SECTIONS --- */
 
-.btn-primary {
-    background-color: var(--obsidian);
-    color: var(--bone);
-    border: 1px solid var(--bone);
-    margin-top: 1rem;
-}
-
-.btn-secondary {
-    background-color: var(--bone);
-    color: var(--obsidian);
-    margin: 2rem auto;
-    display: block;
-    width: max-content;
-}
-
-
-/* ==================================================
-                    MAIN CONTENT SECTIONS
-================================================== */
-
-/* --- HERO --- */
-.hero-container-full {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* HERO */
 .hero {
     width: 100%;
     height: 60vh;
     min-height: 400px;
     background-image: linear-gradient(rgba(10, 7, 17, 0.6), rgba(10, 7, 17, 0.6)), url('../images/Photo_Video_GIT450_Bar_V1.png');
-    background-size: cover;    
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -104,7 +59,7 @@ header .container.title {
     margin-bottom: 0.5rem;
 }
 
-/* --- COCKTAILS (HORIZONTAL SCROLL) --- */
+/* COCKTAILS (HORIZONTAL SCROLL) */
 .menu {
     padding: 3rem 0;
 }
@@ -118,12 +73,12 @@ header .container.title {
 }
 
 .carousel-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for cleaner mobile look */
+    display: none;
 }
 
 .cocktail-card {
     width: 200px; 
-    flex-shrink: 0;    
+    flex-shrink: 0;
     height: 240px;
     background-color: var(--smoke-violet);
     padding: 1.5rem 1rem;
@@ -133,47 +88,11 @@ header .container.title {
     border: 1px solid var(--oxblood);
 }
 
-.card-img-1 {
+.card-img-1, .card-img-2, .card-img-3, .card-img-4, .card-img-5, .card-img-6 {
     width: 100px;
     height: 100px;
-    background-image: url('../images/Photo_Video_Project-Rum-Barrel_Coct1_V1.jpg'); 
-    background-size: cover;     flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-.card-img-2 {
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/Photo_Video_GIT450_Photo_Club_soda_V1.jpg'); 
-    background-size: cover;     flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-.card-img-3 {
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/temp-tumataunga.png'); 
-    background-size: cover;     flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-.card-img-4 {
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/temp-whiro.png'); 
-    background-size: cover;     flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-.card-img-5 {
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/Mid night Tiki.jpeg'); 
-    background-size: cover;     flex-shrink: 0;
-    margin: 0 auto 1rem;
-}
-
-.card-img-6 {
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/Volcanic Ember.jpeg'); 
-    background-size: cover;     flex-shrink: 0;
+    background-size: cover;
+    flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 
@@ -189,23 +108,21 @@ header .container.title {
 }
 
 .cocktail-card p:first-of-type {
-    margin-bottom: .5rem; 
+    margin-bottom: .5rem;
 }
+
 .cocktail-card p em {
     font-size: 0.9rem;
     font-style: italic;
     font-family: var(--font-header);
 }
 
-/* --- EVENTS --- */
+/* EVENTS */
 .events {
     padding: 3rem 1.5rem;
-    background: 
-        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
-        url('../images/Asset 1.png'); 
-    
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png'); 
     background-repeat: repeat;
-    background-size: 600px; /* Adjust this number to scale the pattern up or down */
+    background-size: 600px;
 }
 
 .event-list {
@@ -226,25 +143,6 @@ header .container.title {
     text-align: left;
 }
 
-.event-img1 {
-    width: 80px;
-    height: 80px;
-    background-image: url('../images/Jazz band.png'); 
-    background-size: cover;     flex-shrink: 0;
-}
-.event-img2 {
-    width: 80px;
-    height: 80px;
-    background-image: url('../images/fire dance.png'); 
-    background-size: cover;     flex-shrink: 0;
-}
-.event-img3 {
-    width: 80px;
-    height: 80px;
-    background-image: url('../images/dancers.png'); 
-    background-size: cover;     flex-shrink: 0;
-}
-
 .event-details .date {
     font-weight: bold;
     color: var(--muted-gold);
@@ -262,22 +160,16 @@ header .container.title {
     font-size: 0.85rem;
 }
 
-/* --- OUR STORY --- */
-
+/* STORY */
 .story {
     position: relative;
     padding: 5rem 1.5rem 8rem 1.5rem;
-    background: 
-        linear-gradient(to top, var(--oxblood) 250px, transparent 250px),
-        linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
-        url('../images/Asset 1.png');
+    background: linear-gradient(to top, var(--oxblood) 250px, transparent 250px), linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png');
     background-size: auto, auto, 600px; 
     background-repeat: repeat;
-    
-    overflow: hidden; 
+    overflow: hidden;
     z-index: 1;
 }
-
 
 .story::before {
     content: "";
@@ -288,8 +180,7 @@ header .container.title {
     height: 500px;
     top: 70px; 
     right: -250px; 
-    
-    z-index: -1; 
+    z-index: -1;
 }
 
 .story-content {
@@ -305,17 +196,15 @@ header .container.title {
     height: 300px;
     background-image: url('../images/BrandTeam2_GIT450_550_Po_Po_StonePrincess_V1.jpeg'); 
     background-size: cover; 
-        background-position: center; 
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    background-position: center; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     margin: 0 auto 2rem auto;
     position: relative;
     top: 80px; 
     z-index: 2;
 }
 
-/* ==================================================
-                    FOOTER
-================================================== */
+/* FOOTER */
 footer {
     background-color: var(--obsidian);
     padding: 3rem 1.5rem;
@@ -358,10 +247,7 @@ footer a:hover {
 @media screen and (min-width: 900px) {
     .story {
         padding: 8rem 1.5rem 200px 1.5rem;
-        background: 
-            linear-gradient(to top, var(--oxblood) 200px, transparent 200px),
-            linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), 
-            url('../images/Asset 1.png'); 
+        background: linear-gradient(to top, var(--oxblood) 200px, transparent 200px), linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url('../images/Asset 1.png');
         background-size: auto, auto, 600px;
     }
 
@@ -370,7 +256,7 @@ footer a:hover {
         max-width: 1000px;
         height: 400px;
         margin: 0 auto;
-        top: 0; 
+        top: 0;
     }
 
     .story-content {
@@ -394,22 +280,11 @@ footer a:hover {
         bottom: -300px; 
         right: -400px; 
     }
-
-    .story-img-placeholder {
-        width: 80%;
-        max-width: 1000px;
-        height: 400px;
-        margin: 0 auto;
-        top: 0; 
-        background-image: url('../images/BrandTeam2_GIT450_550_Po_VolcanicSurfaceBackground_V1.png'); 
-    }
 }
+
 @media screen and (min-width: 600px) {
-    /* FOOTER FLEX FOR TABLET/DESKTOP */
     .footer-grid {
         flex-direction: row;
         justify-content: space-between;
     }
-    
-
 }
