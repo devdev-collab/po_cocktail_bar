@@ -117,13 +117,7 @@ nav a {
             
 html {
     min-width: 400px;
-    background: linear-gradient(
-        to bottom, 
-        var(--smoke-violet) 0%,
-        var(--obsidian) 40%, 
-        var(--obsidian) 50%,
-        var(--obsidian) 100%
-        );
+    
 }
 
 body {
