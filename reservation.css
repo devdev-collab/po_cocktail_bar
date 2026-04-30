@@ -84,6 +84,7 @@ header {
     #address-content h2 {
         font-size: 27pt;
         font-family: var(--font-header);
+        padding-top: 10px;
     }
 
     #address-content p {
