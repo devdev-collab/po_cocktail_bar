@@ -24,6 +24,7 @@ header {
     background-color: transparent;
     background-size: 600px;
     margin: 0 auto;
+    border-bottom: none;
 }
 
 /* ----------MAIN----------*/
