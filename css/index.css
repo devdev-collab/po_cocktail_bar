@@ -109,6 +109,11 @@ header .container.title {
     padding: 3rem 0;
 }
 
+.menu h2 {
+    font-family: var(--font-header);
+    font-size: 27pt;
+}
+
 .carousel-container {
     display: flex;
     overflow-x: auto;
