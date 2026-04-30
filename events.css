@@ -1,0 +1,226 @@
+html {
+    min-width: 400px;
+    background-color: var(--obsidian);
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--text-bone);
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--bone);
+}
+
+nav a, a {
+    text-decoration: none;
+    color: var(--text-bone);
+}
+
+
+/* ==================================================
+                    HEADER
+================================================== */
+/* --- HEADER --- */
+header .container.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header {
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
+    background-repeat: repeat;
+    background-size: 600px;
+    margin: 0 auto;
+    border-bottom: none;
+}
+
+/* ==================================================
+                    MAIN
+================================================== */
+
+/* --- MAIN CONTENT SECTIONS --- */
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 35pt;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-size: 27pt;
+}
+
+
+/* CALENDAR (HORIZONTAL SCROLL) */
+.calendar {
+    padding: 0 30px;
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
+    background-repeat: repeat;
+    background-size: 600px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem 3rem;
+    mask-type: x mandatory;
+    justify-content: space-evenly;
+}
+
+.carousel-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background: var(--ember);
+    border-radius: 10px;
+}
+
+.calendar-card {
+    width: 150px; 
+    flex-shrink: 0;
+    background-color: var(--oxblood);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    scroll-snap-align: center;
+    box-shadow: 0 0 20px var(--muted-gold);
+    border: 1px solid var(--oxblood);
+}
+
+.calendar-card h2 {
+    font-size: 16pt;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-card p {
+    font-size: 12pt;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.calendar-card p:first-of-type {
+    margin-bottom: .5rem;
+}
+
+.calendar-card p em {
+    font-size: 14pt;
+    font-style: italic;
+    font-family: var(--font-header);
+}
+
+/* EVENTS */
+.events {
+    padding: 1.5rem 1.5rem 3rem;
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
+    background-repeat: repeat;
+    background-size: 600px;
+    margin: 0 auto;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgba(10, 7, 17, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.event-item img {
+    width: 90px;
+    height: 90px;
+    background-size: cover;     flex-shrink: 0;
+    border-color: var(--ember);
+}
+
+.event-details .date {
+    font-weight: bold;
+    color: var(--muted-gold);
+    margin-bottom: 0.2rem;
+}
+
+.event-details .name {
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    color: var(--bone);
+    margin-bottom: 0.2rem;
+}
+
+.event-details .cost {
+    font-size: 0.85rem;
+}
+
+
+
+
+/* ==================================================
+                    FOOTER
+================================================== */
+footer {
+    background-color: var(--obsidian);
+    border-top: 1px solid var(--smoke-violet);
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+}
+
+.footer-address h2, .footer-social h2 {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin-bottom: 0.8rem;
+}
+
+.footer-subhead, .footer-contact-head {
+    font-size: 1.2rem;
+    color: var(--muted-gold);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+    color: var(--ember);
+}
+
+/* ==================================================
+                    MEDIA QUERIES
+================================================== */
+
+@media screen and (min-width: 900px) {
+   
+}
+
+@media screen and (min-width: 600px) {
+    .footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
