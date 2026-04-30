@@ -41,7 +41,7 @@ main {
     font-family: var(--font-header);
     font-size: 35pt;
     background-color: var(--obsidian);
-    padding: 30px;
+    padding-top: 3rem;
 }
 
 /* ---------- CAROUSEL ---------- */
