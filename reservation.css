@@ -210,13 +210,12 @@ header {
 
 
 .booking img {
-    width: 60%;
+    width: 100%;
     height: 300px;
     background-image: url(/images/Photo_Video_GIT450_Bar_V1.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    margin: 0 auto 2rem auto;
 }
 
 /* ----------FOOTER----------*/
