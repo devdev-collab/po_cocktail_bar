@@ -12,7 +12,7 @@
 
 /* ----------HEADER----------*/
 header {
-    background-color: none;
+    background-color: transparent;
     background-size: 600px;
     max-width: 1250px;
     margin: 0 auto;
