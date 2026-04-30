@@ -64,7 +64,7 @@ main {
     gap: 20px;
     text-align: center;
     padding: 3rem 1.5rem;
-
+    justify-content: space-evenly;
 }
 
 /* Optional scrollbar styling */
