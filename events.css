@@ -129,6 +129,12 @@ h2 {
     text-align: left;
 }
 
+.event-item img {
+    width: 80px;
+    height: 80px;
+    background-size: cover;     flex-shrink: 0;
+}
+
 .event-details .date {
     font-weight: bold;
     color: var(--muted-gold);
@@ -145,6 +151,8 @@ h2 {
 .event-details .cost {
     font-size: 0.85rem;
 }
+
+
 
 
 /* ==================================================
