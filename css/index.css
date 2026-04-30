@@ -115,6 +115,7 @@ header .container.title {
     gap: 1.5rem;
     padding: 1rem 1.5rem;
     mask-type: x mandatory;
+    justify-content: space-evenly;
 }
 
 .carousel-container::-webkit-scrollbar {
