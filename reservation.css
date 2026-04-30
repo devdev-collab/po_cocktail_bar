@@ -265,9 +265,6 @@ footer {
             margin: 0 auto;
         }
 
-        .booking-img {
-
-        }
 }
 
 
@@ -290,5 +287,13 @@ footer {
 
     .field {
         flex: 1 1 200px;
+    }
+
+    .booking img {
+        width: 80%;
+        max-width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        top: 0;
     }
 }
