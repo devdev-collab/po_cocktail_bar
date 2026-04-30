@@ -117,12 +117,73 @@ nav a {
             
 html {
     min-width: 400px;
+<<<<<<< HEAD
+    background: linear-gradient(
+        to bottom, 
+        var(--smoke-violet) 0%,
+        var(--obsidian) 40%, 
+        var(--obsidian) 50%,
+        var(--obsidian) 100%
+        );
+=======
     
+>>>>>>> main
 }
 
 body {
     text-align: center;
     font-family: var(--font-body);
+<<<<<<< HEAD
+    color: white;
+}
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+        box-sizing: border-box;
+    }
+
+                header {
+                    background-color: var(--smoke-violet);
+                    border-bottom: 1px solid var(--muted-gold);
+                }
+
+                header .container.title {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                
+                .title {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    padding: 15px 0;
+                    width: 100%;
+                }
+                
+                .logo-and-title {
+                    display: flex;
+                    padding-left: 20px;
+                    align-items: center;
+                }
+                
+                .logo-and-title h1 {
+                    font-size: 2rem;
+                    margin: 0;
+                    color: var(--muted-gold);
+                    letter-spacing: 2px;
+                }
+                
+                .logo-and-title img {
+                    height: 100px;      
+                    width: auto;       
+                    display: block;
+                    max-width: 100%;  
+                }
+/*----------NAV----------*/
+=======
     color: var(--bone);
 }
 
@@ -166,6 +227,7 @@ header {
     display: block;
     max-width: 100%;  
     }
+>>>>>>> main
 
 .navigation {
     justify-self: end;
@@ -176,6 +238,33 @@ header {
     color: var(--bone);
 }
 
+<<<<<<< HEAD
+    .navigation ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+        .navigation li {
+            list-style: none;
+            padding: 5px 20px;
+        }
+
+        .navigation a, .navigation a:visited, .navigation a:active {
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: var(--bone);
+            transition: background-color 0.5s;
+        }
+
+        .navigation li:hover, .navigation a:hover {
+            color: var(--obsidian);
+            background-color: var(--ember);
+        }
+=======
 .navigation ul {
     display: none;
     list-style: none;
@@ -201,11 +290,88 @@ header {
     color: var(--obsidian);
     background-color: var(--ember);
     }
+>>>>>>> main
 
 #hamburger {
     display: none;
 }
 
+<<<<<<< HEAD
+    .navigation label {
+        position: absolute; 
+        top: -20px;
+        right: 0;
+        margin-right: 10px;
+        order: 2;
+        z-index: 101;
+        cursor: pointer;
+        display: flex;      
+        align-items: center;  
+        width: 40px; 
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent; 
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .dropdown-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw; 
+        top: 47px; 
+        right: 0;    
+        background-color: var(--smoke-violet);
+        padding: 20px 0;
+        z-index: 101;
+        box-sizing: border-box;
+    }
+    .dropdown-nav a {
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    #hamburger:checked ~ .dropdown-nav {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        background-color: var(--smoke-violet);
+    }
+
+    label span {
+        background-color: var(--bone);
+        display: block;
+        height: .25rem;
+        position: relative;
+        transition: background-color .3s ease-out;
+        width: 2rem;
+    }
+
+    label span:before, label span:after {
+        background: var(--bone);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    label span:before {
+        top: .75rem;
+        left: 0;
+    }
+
+    label span:after {
+        top: -.75rem;
+        left: 0;
+=======
 .navigation label {
     position: absolute; 
     top: -20px;
@@ -280,6 +446,7 @@ label span:before {
 label span:after {
     top: -.75rem;
     left: 0;
+>>>>>>> main
     }
 
 
@@ -369,6 +536,10 @@ footer {
         .footer-address, .footer-social {
             display: flex;
             flex-direction: column;
+<<<<<<< HEAD
+            gap: 1rem;
+=======
+>>>>>>> main
         }
 
         .footer a:hover {
@@ -404,6 +575,59 @@ footer {
         max-width: 200px;
     }
 
+<<<<<<< HEAD
+/* NAV & FOOTER  */
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.navigation li {
+    white-space: nowrap;
+}
+
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+=======
+>>>>>>> main
 
 .footer {
     padding: 0 20px;
@@ -427,6 +651,11 @@ footer {
 
 /* NAV & FOOTER  */
 
+<<<<<<< HEAD
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+=======
 .title {
     display: flex;
     justify-content: space-between;
@@ -436,11 +665,16 @@ footer {
 .navigation {
     margin: 0;
     max-width: none;
+>>>>>>> main
 }
 
 .navigation ul {
     display: flex;
+<<<<<<< HEAD
+    justify-content: center;
+=======
     justify-content: flex-end;
+>>>>>>> main
     flex-wrap: nowrap;
 }
 
@@ -448,6 +682,41 @@ footer {
     white-space: nowrap;
 }
 
+<<<<<<< HEAD
+    .navigation a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--blue);
+        color: var(--black)
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #hamburger, .navigation label {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+=======
 .navigation a {
     display: inline-block;
     padding: 10px 12px; 
@@ -482,12 +751,19 @@ footer {
     background: none;
     width: auto;
 }
+>>>>>>> main
 
     .footer {
             grid-template-columns: 1fr 1fr;
             padding: 3rem 1.5rem;
         }
 
+<<<<<<< HEAD
+        .footer-address, .footer-social {
+            gap: 2rem;
+        }
+=======
+>>>>>>> main
 }
 
 
