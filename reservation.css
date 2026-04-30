@@ -130,7 +130,6 @@ header {
     font-size: 16pt;
     font-family: var(--font-header);
     text-align: center;
-    padding: 20px;
 }
 
 .booking p {
