@@ -75,6 +75,8 @@ header .container.title {
 header {
     margin: 0 auto;
     background-size: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --- HERO --- */
