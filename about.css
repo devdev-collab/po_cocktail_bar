@@ -11,6 +11,7 @@ html {
     /* Header*/
 header {
     background-color: transparent;
+    border-bottom: none;
 }
 
     /* Story Section */
