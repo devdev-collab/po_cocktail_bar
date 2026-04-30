@@ -48,6 +48,7 @@ main {
 
 .story h2 {
     margin-bottom: 25px;
+    font-family: var(--font-header);
     font: var(--font-header);
     font-size: 27px;
 }
