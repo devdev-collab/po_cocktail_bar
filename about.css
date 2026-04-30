@@ -1,4 +1,22 @@
-    /* Page */
+:root {
+
+/*----------COLOR----------*/
+--obsidian: #0A0711;
+--oxblood: #961E1E;
+--ember: #C85B29;
+--smoke-violet: #3C3642;
+--bone: #E5DDD1;
+--text-bone: #DBDFDC;
+--muted-gold: #B89A5A;
+
+/*----------FONTS----------*/
+    --font-header: 'Trajan Pro', serif;
+    --font-body: "Roboto", "Open Sans", sans-serif;
+
+}
+
+
+/* Page */
 
 html {
     background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
@@ -49,7 +67,6 @@ main {
 .story h2 {
     margin-bottom: 25px;
     font-family: var(--font-header);
-    font: var(--font-header);
     font-size: 27px;
 }
 
