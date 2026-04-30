@@ -136,6 +136,7 @@ header {
 .booking p {
     font-size: 12pt;
     font-family: var(--font-body);
+    padding-bottom: 20px;
 }
 
 
@@ -215,7 +216,7 @@ header {
     background-image: url(/images/Photo_Video_GIT450_Bar_V1.png);
     background-size: cover;
     background-position: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
 }
 
 /* ----------FOOTER----------*/
