@@ -83,7 +83,7 @@ main {
 .cocktail-card {
     background: linear-gradient(
         to bottom,
-        var(--smoke-violet),
+        var(--oxblood),
         var(--obsidian)
     );
     border-radius: 20px;
