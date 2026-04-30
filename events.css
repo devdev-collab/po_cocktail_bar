@@ -55,8 +55,11 @@ h2 {
 
 
 /* CALENDAR (HORIZONTAL SCROLL) */
-.menu {
-    padding: 3rem 0;
+.calendar {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
+    background-repeat: repeat;
+    background-size: 600px;
 }
 
 .carousel-container {
@@ -77,13 +80,13 @@ h2 {
 }
 
 .calendar-card {
-    width: 200px; 
+    width: 150px; 
     flex-shrink: 0;
-    background-color: var(--obsidian);
+    background-color: var(--oxblood);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     scroll-snap-align: center;
-    box-shadow: 0 0 20px var(--oxblood);
+    box-shadow: 0 0 20px var(--muted-gold);
     border: 1px solid var(--oxblood);
 }
 
@@ -127,7 +130,7 @@ h2 {
 .event-item {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     background-color: rgba(10, 7, 17, 0.9);
     padding: 1rem;
     border-radius: 4px;
