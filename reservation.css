@@ -41,7 +41,6 @@ header {
         font-family: var(--font-header);
         font-size: 35pt;
         color: var(--text-bone);
-        padding-top: 3rem;
     }
             /* ----------ADDRESS----------*/
 .address {
