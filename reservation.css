@@ -211,7 +211,6 @@ header {
 
 .booking img {
     justify-content: center;
-    min-width: fit-content;
     width: 420px;
     height: auto;
     margin: 0 auto;
@@ -259,6 +258,10 @@ footer {
             justify-content: center;
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        .booking-img {
+
         }
 }
 
