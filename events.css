@@ -43,6 +43,16 @@ header .container.title {
 
 /* --- MAIN CONTENT SECTIONS --- */
 
+h1 {
+    font-family: var(--font-header);
+    font-size: 35pt;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-size: 27pt;
+}
+
 
 /* CALENDAR (HORIZONTAL SCROLL) */
 .menu {
