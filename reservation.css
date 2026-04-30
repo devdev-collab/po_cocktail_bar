@@ -14,7 +14,6 @@
 header {
     background-color: transparent;
     background-size: 600px;
-    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -205,7 +204,6 @@ header {
 footer {
     background-color: var(--obsidian);
     border-top: 1px solid var(--smoke-violet);
-    max-width: 1200px;
     margin: 0 auto;
 }
 
