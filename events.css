@@ -1,26 +1,16 @@
-:root {
-
-/*----------COLOR----------*/
---obsidian: #0A0711;
---oxblood: #961E1E;
---ember: #C85B29;
---smoke-violet: #3C3642;
---bone: #E5DDD1;
---text-bone: #DBDFDC;
---muted-gold: #B89A5A;
-
-/*----------FONTS----------*/
-    --font-header: 'Trajan Pro', serif;
-    --font-body: "Roboto", "Open Sans", sans-serif;
-
+html {
+    min-width: 400px;
+    background-color: var(--obsidian);
 }
 
 body {
-    font-family: var(---font-body);
-    font-weight: 400;
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--text-bone);
     line-height: 1.6;
-    color: #333;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,22 +18,30 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: var(--bone);
 }
 
-nav a {
-    font-family: var(--font-header);
+nav a, a {
     text-decoration: none;
-    font-weight: 700;
+    color: var(--text-bone);
 }
 
+
+/* ==================================================
+                    HEADER
+================================================== */
 /* --- HEADER --- */
 header .container.title {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-/* --- MAIN CONTENT SECTIONS --- */
 
+/* ==================================================
+                    MAIN
+================================================== */
+
+/* --- MAIN CONTENT SECTIONS --- */
 
 
 /* CALENDAR (HORIZONTAL SCROLL) */
@@ -140,7 +138,9 @@ header .container.title {
 }
 
 
-/* FOOTER */
+/* ==================================================
+                    FOOTER
+================================================== */
 footer {
     background-color: var(--obsidian);
     padding: 3rem 1.5rem;
