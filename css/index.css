@@ -73,10 +73,11 @@ header .container.title {
 ================================================== */
 /* --- HEADER --- */
 header {
-    margin: 0 auto;
+    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
+    background-repeat: repeat;
     background-size: 600px;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    border-bottom: none;
 }
 
 /* --- HERO --- */
