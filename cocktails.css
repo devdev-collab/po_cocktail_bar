@@ -123,7 +123,6 @@ main {
 
 footer {
     background-color: var(--obsidian);
-    padding: 3rem 1.5rem;
     border-top: 1px solid var(--smoke-violet);
     text-align: left;
 }
@@ -182,7 +181,6 @@ footer a:hover {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         gap: 20px;
-        padding-bottom: 10px;
     }
 
     .cocktail-card {
