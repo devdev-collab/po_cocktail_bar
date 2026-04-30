@@ -40,7 +40,6 @@ header {
     background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
-    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -124,7 +123,6 @@ h2 {
     background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -179,7 +177,6 @@ h2 {
 footer {
     background-color: var(--obsidian);
     border-top: 1px solid var(--smoke-violet);
-    max-width: 1200px;
     margin: 0 auto;
 }
 
