@@ -70,7 +70,7 @@ main {
 }
 
 .story h2 {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-family: var(--font-header);
     font-size: 27px;
 }
@@ -80,7 +80,7 @@ main {
     font-family: var(--font-body);
     color: #ddd;
     line-height: 1.6;
-    max-width: 320px;
+    max-width: 348px;
     margin: 10px auto;
     font-weight: 500;
 }
@@ -215,6 +215,7 @@ footer {
         font-family: var(--font-body);
         justify-self: start;
         font-weight: 500;
+        width: 550px;
 }
 
 /* adjust gallery grid layout */
