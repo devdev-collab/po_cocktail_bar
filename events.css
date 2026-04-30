@@ -133,6 +133,7 @@ h2 {
     width: 80px;
     height: 80px;
     background-size: cover;     flex-shrink: 0;
+    border-color: var(--ember);
 }
 
 .event-details .date {
