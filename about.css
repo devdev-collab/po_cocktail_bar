@@ -54,9 +54,8 @@ main {
 .circle {
     width: 180px;
     height: 180px;
-    background: #ccc;
     border-radius: 55%;
-    border: 14px solid var(--oxblood);
+    border: 12px solid var(--oxblood);
     position: absolute;
     top: -140px;
     transform: translate(-50%);
