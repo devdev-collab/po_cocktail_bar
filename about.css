@@ -14,14 +14,18 @@ header {
     border-bottom: none;
 }
 
-    /* Story Section */
-.story {
+    /* Main */
+main {
     background: linear-gradient(
         to bottom, 
         var(--oxblood) 0%,
         var(--obsidian) 40%, 
         var(--obsidian) 50%,
         var(--obsidian) 100% );
+}
+
+    /* Story Section */
+.story {
     text-align: center;
     padding: 80px 20px 60px;
     position: relative;
