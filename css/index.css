@@ -75,7 +75,7 @@ header .container.title {
 /* --- HERO --- */
 .hero-container-full {
     width: 100%;
-    max-width: none;
+    max-width: 1200px;
     margin: 0;
     padding: 0;
 }
@@ -327,7 +327,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .footer-address h2, .footer-social h2 {
