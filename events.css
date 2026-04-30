@@ -1,16 +1,26 @@
-html {
-    min-width: 400px;
-    background-color: var(--obsidian);
+:root {
+
+/*----------COLOR----------*/
+--obsidian: #0A0711;
+--oxblood: #961E1E;
+--ember: #C85B29;
+--smoke-violet: #3C3642;
+--bone: #E5DDD1;
+--text-bone: #DBDFDC;
+--muted-gold: #B89A5A;
+
+/*----------FONTS----------*/
+    --font-header: 'Trajan Pro', serif;
+    --font-body: "Roboto", "Open Sans", sans-serif;
+
 }
 
 body {
-    text-align: center;
-    font-family: var(--font-body);
-    font-weight: 300;
-    color: var(--text-bone);
+    font-family: var(---font-body);
+    font-weight: 400;
     line-height: 1.6;
+    color: #333;
     margin: 0;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,12 +28,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: var(--bone);
 }
 
-nav a, a {
+nav a {
+    font-family: var(--font-header);
     text-decoration: none;
-    color: var(--text-bone);
+    font-weight: 700;
 }
 
 /* --- HEADER --- */
