@@ -54,9 +54,8 @@ main {
 .circle {
     width: 180px;
     height: 180px;
-    background: #ccc;
     border-radius: 55%;
-    border: 14px solid var(--oxblood);
+    border: 12px solid var(--oxblood);
     position: absolute;
     top: -140px;
     transform: translate(-50%);
@@ -83,6 +82,7 @@ main {
     line-height: 1.6;
     max-width: 320px;
     margin: 10px auto;
+    font-weight: 500;
 }
 
 /* Gallery Grid */
@@ -155,9 +155,10 @@ footer {
 
     .story p {
         max-width: 600px;
-        font-size: 12px;
+        font-size: 13px;
         font-family: var(--font-body);
         justify-self: start;
+        font-weight: 500;
     }
 
     .circle {
@@ -210,9 +211,10 @@ footer {
     }
 
     .story p {
-        font-size: 12px;
+        font-size: 14px;
         font-family: var(--font-body);
         justify-self: start;
+        font-weight: 500;
 }
 
 /* adjust gallery grid layout */
