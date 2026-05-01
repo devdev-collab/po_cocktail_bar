@@ -200,8 +200,8 @@ header {
 }
 
 .booking-form button {
-    width: 160px;
-    padding: 13px 20px;
+    width: 140px;
+    padding: 10px 20px;
     background-color: var(--muted-gold);
     border: none;
     color: var(--obsidian);
@@ -209,6 +209,8 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 700;
+    text-decoration: none;
+    font-size: 14pt;
 }
 
 .booking-form button:hover {
