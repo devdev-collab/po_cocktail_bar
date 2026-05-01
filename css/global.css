@@ -89,7 +89,7 @@ table {
 }
 
 body {
-    font-family: var(---font-body);
+    font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
     color: #333;
@@ -229,20 +229,21 @@ header {
 .dropdown-nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    width: 100vw; 
-    top: 47px; 
-    right: 0;    
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    top: 92px;
     background-color: var(--smoke-violet);
     padding: 20px 0;
     z-index: 101;
     box-sizing: border-box;
     }
-.dropdown-nav a {
+
+    .dropdown-nav a {
     display: block;
     padding: 10px 0;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--bone);
     text-align: center;
     }
 
@@ -464,7 +465,7 @@ footer {
 
 .navigation a:hover {
     background-color: var(--blue);
-    color: var(--black)
+    color: var(--obsidian)
 }
 
 #hamburger {
