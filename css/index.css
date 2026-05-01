@@ -137,7 +137,7 @@ header {
 .cocktail-card {
     width: 200px; 
     flex-shrink: 0;    
-    height: 240px;
+    height: 280px;
     background-color: var(--smoke-violet);
     padding: 1.5rem 1rem;
     border-radius: 12px;
@@ -147,44 +147,44 @@ header {
 }
 
 .card-img-1 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/Photo_Video_Project-Rum-Barrel_Coct1_V1.jpg'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 .card-img-2 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/Photo_Video_GIT450_Photo_Club_soda_V1.jpg'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 .card-img-3 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/temp-tumataunga.png'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 .card-img-4 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/temp-whiro.png'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 .card-img-5 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/Mid night Tiki.jpeg'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
 }
 
 .card-img-6 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url('../images/Volcanic Ember.jpeg'); 
     background-size: cover;     flex-shrink: 0;
     margin: 0 auto 1rem;
