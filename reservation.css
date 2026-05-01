@@ -200,8 +200,8 @@ header {
 }
 
 .booking-form button {
-    width: 140px;
-    padding: 10px 20px;
+    width: 180px;
+    padding: 12px 20px;
     background-color: var(--muted-gold);
     border: none;
     color: var(--obsidian);
