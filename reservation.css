@@ -59,12 +59,15 @@ header {
 
 .hero-button {
     display: inline-block;
-    background-color: var(--muted-gold);
-    color: var(--obsidian);
-    padding: 12px 24px;
-    border-radius: 5px;
     text-decoration: none;
     font-family: var(--font-body);
+    width: 140px;
+    padding: 10px 20px;
+    background-color: var(--muted-gold);
+    color: var(--obsidian);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14pt;
     font-weight: 700;
 }
 
