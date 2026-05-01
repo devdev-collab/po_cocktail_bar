@@ -68,12 +68,12 @@
 
         <form class="booking-form">
             <div class="field">
-                <input type="date" id="date" required>
+                <input type="date" id="date" name="date" required>
                 <label for="date">Date</label>
             </div>
 
             <div class="field">
-                <select id="guests" required>
+                <select id="guests" name="guests" required>
                     <option value=""></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -84,7 +84,7 @@
             </div>
 
             <div class="field">
-                <select id="location" required>
+                <select id="location" name="location" required>
                     <option value=""></option>
                     <option value="indoor">Indoor</option>
                     <option value="outdoor">Outdoor</option>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="field request-field">
-                <input type="text" id="requests" placeholder=" ">
+                <input type="text" id="requests" name="requests">
                 <label for="requests">Requests</label>
             </div>
 
@@ -154,3 +154,34 @@
 </body>
 </html>
 
+<script>
+document.getElementById("booking-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = {
+        data: {
+            date: document.getElementById("date").value,
+            guests: document.getElementById("guests").value,
+            location: document.getElementById("location").value,
+            requests: document.getElementById("requests").value
+        }
+    };
+
+    fetch("https://sheetdb.io/api/v1/ii8j57j7zfsog", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Reservation submitted!");
+        document.getElementById("booking-form").reset();
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Something went wrong.");
+    });
+});
+</script>
