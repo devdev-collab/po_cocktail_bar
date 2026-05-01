@@ -161,7 +161,7 @@ header {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .field {
