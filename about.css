@@ -38,10 +38,10 @@ main {
     /* Story Section */
 .story {
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 126px 20px 60px;
     position: relative;
     font-weight: 700;
-    margin-top: 160px;
+    margin-top: 240px;
 }
 
 .circle {
@@ -148,7 +148,7 @@ main {
     } 
 
     .story {
-        margin-top: 140px;
+        margin-top: 240px;
         padding: 130px;
     }
 
@@ -209,7 +209,7 @@ main {
         display: grid;
         align-items: center;
         padding: 100px 60px 100px;
-        margin-top: 160px;
+        margin-top: 240px;
     }
 
     .story h2 {
