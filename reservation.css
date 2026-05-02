@@ -218,6 +218,16 @@ header {
     color: var(--bone);
 }
 
+input[type="tel"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="tel"] {
+    -moz-appearance: textfield;
+}
+
 /* ----------SEATING OPTIONS---------- */
 
 .seating-options {
