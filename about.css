@@ -126,12 +126,6 @@ main {
     object-fit: cover;
 }
 
-    /* Footer */
-footer {
-    background-color: var(--obsidian);
-    border-top: 1px solid var(--muted-gold);
-}
-
 
 /* Media Queries */
 

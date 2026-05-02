@@ -300,81 +300,71 @@ label span:after {
     transform: rotate(-45deg);
 } 
 /*----------FOOTER----------*/
+
+/* The Base Footer Background */
 footer {
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-    color: var(--bone);
+    background-color: var(--obsidian);
+    border-top: 4px solid var(--oxblood);
+    padding: 3rem 0;
 }
 
-    .footer {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
+/* The 3-Column Layout */
+.footer-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; 
+    gap: 1rem;
+}
 
-        .footer h2 {
-            text-align: center;
-            font-size: 16pt;
-            font-family: var(--font-header);
-            color: var(--muted-gold);
-        }
+/* LEFT SIDE */
+.footer-left img {
+    width: 75px; 
+    height: auto;
+    display: block;
+}
 
-        .footer h3 {
-            font-size: 14pt;
-            font-family: var(--font-header);
-            color: var(--muted-gold);
-        }
+/* CENTER SIDE */
+.footer-center img {
+    width: 210px;
+    height: auto;
+    display: block;
+}
 
-        .footer p {
-            font-size: 12pt;
-            font-family: var(--font-body);
-        }
+/* RIGHT SIDE */
+.footer-right {
+    text-align: right;
+    font-family: var(--font-header);
+    color: var(--bone);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
 
-        .footer a {
-            text-decoration: none;
-            color: var(--bone);
-        }
+.footer-right p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
 
-        .footer-address {
-            grid-column: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+/* The Social Links */
+.footer-right a {
+    display: block;
+    color: var(--bone);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    border-bottom: 1px solid var(--bone);
+    width: fit-content;
+    margin-left: auto; 
+}
 
-        .footer-social {
-            grid-column: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-
-        .footer-social h2 {
-            margin-top: 0;
-            font-size: 16pt;
-            text-align: center;
-        }
-
-        .footer-social p {
-            margin: 5px 0;
-        }
-
-        .footer-address, .footer-social {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer a:hover {
-            color: var(--ember);
-        }
+.footer-right a:hover {
+    color: var(--oxblood);
+    border-bottom-color: var(--oxblood);
+}
 
 
 
