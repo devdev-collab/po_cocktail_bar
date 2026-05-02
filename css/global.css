@@ -117,7 +117,7 @@ nav a {
             
 html {
     min-width: 400px;
-    
+    scroll-behavior: smooth;
 }
 
 body {
