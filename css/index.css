@@ -53,9 +53,8 @@ header .container.title {
 }
 
 .btn-primary {
-    background-color: var(--obsidian);
+    background-color: var(--muted-gold);
     color: var(--bone);
-    border: 1px solid var(--bone);
     margin-top: 1rem;
 }
 
