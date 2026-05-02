@@ -95,8 +95,13 @@
             </div>
 
             <div class="field">
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="name">Name</label>
+            </div>
+
+            <div class="field">
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Phone Number</label>
             </div>
 
             <div class="field request-field">
@@ -164,7 +169,8 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         date: document.getElementById("date").value,
         guests: document.getElementById("guests").value,
         location: document.getElementById("location").value,
-        location: document.getElementById("name").value,
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
         requests: document.getElementById("requests").value
     };
 
