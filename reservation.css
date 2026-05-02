@@ -71,8 +71,7 @@ header {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 10px solid var(--oxblood);
-    background-color: var(--smoke-violet);
+    border: 30px solid var(--oxblood);
 }
 
 .address-content {
