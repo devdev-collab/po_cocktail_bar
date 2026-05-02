@@ -151,18 +151,15 @@
     </div>
 </footer>
 
-</body>
-</html>
-
 <script>
 document.getElementById("booking-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const data = {
-        Date: document.getElementById("date").value,
-        Guests: document.getElementById("guests").value,
-        Location: document.getElementById("location").value,
-        Requests: document.getElementById("requests").value
+        date: document.getElementById("date").value,
+        guests: document.getElementById("guests").value,
+        location: document.getElementById("location").value,
+        requests: document.getElementById("requests").value
     };
 
     fetch("https://sheetdb.io/api/v1/ii8j57j7zfsog", {
@@ -184,3 +181,7 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
     });
 });
 </script>
+
+
+</body>
+</html>
