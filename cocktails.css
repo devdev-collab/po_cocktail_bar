@@ -56,6 +56,11 @@ main {
     padding: 20px;
 }
 
+.menu h2 {
+    font-family: var(--font-header);
+    font-size: 27pt;
+}
+
 /* ---------- CAROUSEL ---------- */
 
 .carousel-container {
