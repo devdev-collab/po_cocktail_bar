@@ -108,6 +108,7 @@ header {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 
 /* --- COCKTAILS (HORIZONTAL SCROLL) --- */
@@ -137,7 +138,7 @@ header {
     width: 200px; 
     flex-shrink: 0;    
     height: 280px;
-    background-color: var(--smoke-violet);
+    background-color: var(--oxblood);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     scroll-snap-align: center;
