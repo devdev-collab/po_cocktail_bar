@@ -13,7 +13,7 @@ body {
 
 /* ----------HERO---------- */
 
-.reservation-hero {
+.reservation {
     min-height: 430px;
     background-color: var(--smoke-violet);
     background-size: cover;
