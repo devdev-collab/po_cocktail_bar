@@ -11,15 +11,19 @@ body {
     color: var(--bone);
 }
 
-/* ----------HERO---------- */
+/* ----------HEADER---------- */
+header {
+    border-bottom: none;
+}
+
+
+/* ----------RESERVATION---------- */
 
 .reservation {
-    min-height: 430px;
     background-color: var(--smoke-violet);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -30,14 +34,14 @@ body {
     font-family: var(--font-header);
     font-size: 35pt;
     color: var(--bone);
-    margin-bottom: 15px;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 
 .reservation p {
     font-family: var(--font-body);
     font-size: 14pt;
     color: var(--text-bone);
-    margin-bottom: 25px;
 }
 
 
