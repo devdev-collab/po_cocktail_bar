@@ -218,26 +218,6 @@ header {
     color: var(--bone);
 }
 
-input[type="tel"] {
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-
-.request-field {
-    flex: 1 1 100%;
-}
-
-.booking-form {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    align-items: stretch;
-}
-
 /* ----------SEATING OPTIONS---------- */
 
 .seating-options {
