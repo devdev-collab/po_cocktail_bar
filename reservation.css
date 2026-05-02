@@ -218,14 +218,14 @@ header {
     color: var(--bone);
 }
 
-input[type="tel"]::-webkit-outer-spin-button,
-input[type="tel"]::-webkit-inner-spin-button {
+input[type="tel"] {
     -webkit-appearance: none;
-    margin: 0;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
-input[type="tel"] {
-    -moz-appearance: textfield;
+.request-field {
+    flex: 1 1 100%;
 }
 
 /* ----------SEATING OPTIONS---------- */
