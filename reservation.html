@@ -99,19 +99,8 @@
                 <label for="name">Name</label>
             </div>
 
-            <div class="field">
-                <input type="number" id="phone" name="phone" required>
-                <label for="phone">Phone Number</label>
-            </div>
-
             <div class="field request-field">
-                <input type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                        inputmode="numeric"
-                        pattern="[0-9]+"
-                        maxlength="15">
+                <input type="text" id="requests" name="requests">
                 <label for="requests">Requests</label>
             </div>
 
@@ -176,7 +165,6 @@ document.getElementById("booking-form").addEventListener("submit", function(e) {
         guests: document.getElementById("guests").value,
         location: document.getElementById("location").value,
         name: document.getElementById("name").value,
-        phone: document.getElementById("phone").value,
         requests: document.getElementById("requests").value
     };
 
