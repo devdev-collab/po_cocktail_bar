@@ -15,13 +15,6 @@
     --font-body: "Roboto", "Open Sans", sans-serif;
 }
 
-header {
-    background: linear-gradient(rgba(10, 7, 17, 0.85), rgba(10, 7, 17, 0.85)), url("images/Asset 1.png");
-    background-repeat: repeat;
-    background-size: 600px;
-    margin: 0 auto;
-    border-bottom: none;
-}
 
 body {
     margin: 0;

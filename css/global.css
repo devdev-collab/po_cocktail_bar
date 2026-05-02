@@ -133,7 +133,7 @@ body {
 
 
 header {
-     background-color: var(--smoke-violet);
+     background-color: var(--obsidian);
      border-bottom: 1px solid var(--muted-gold);
     } 
 
@@ -173,7 +173,7 @@ header {
     text-align: left;
     font-size: 16pt;
     font-family: var(--font-header);
-    color: var(--bone);
+    color: var(--text-bone);
 }
 
 .navigation ul {
@@ -232,7 +232,7 @@ header {
     position: fixed; 
     left: 0;
     width: 100%; 
-    top: 92px;
+    top: 131px;
     background-color: var(--smoke-violet);
     padding: 20px 0;
     z-index: 101;
@@ -251,11 +251,11 @@ header {
     display: flex;
     visibility: visible;
     opacity: 1;
-    background-color: var(--smoke-violet);
+    background-color: var(--obsidian);
     }
 
 label span {
-    background-color: var(--bone);
+    background-color: var(--muted-gold);
     display: block;
     height: .25rem;
     position: relative;
@@ -264,7 +264,7 @@ label span {
     }
 
 label span:before, label span:after {
-    background: var(--bone);
+    background: var(--muted-gold);
     content: '';
     display: block;
     height: 100%;
