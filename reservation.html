@@ -105,7 +105,13 @@
             </div>
 
             <div class="field request-field">
-                <input type="text" id="requests" name="requests">
+                <input  type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        inputmode="numeric"
+                        pattern="[0-9]+"
+                        maxlength="15">
                 <label for="requests">Requests</label>
             </div>
 
