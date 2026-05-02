@@ -262,7 +262,6 @@ footer {
 
 @media screen and (min-width: 600px) {
     .address-wrapper {
-        grid-template-columns: 220px 1fr;
         text-align: center;
     }
 
