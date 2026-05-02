@@ -15,9 +15,7 @@ body {
 
 .reservation-hero {
     min-height: 430px;
-    background:
-        linear-gradient(rgba(10, 7, 17, 0.55), rgba(10, 7, 17, 0.8)),
-        url("images/Photo_Video_GIT450_Bar_V1.png");
+    background-color: var(--smoke-violet);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,46 +26,20 @@ body {
     padding: 40px 20px;
 }
 
-.reservation-hero-content {
-    background-color: rgba(10, 7, 17, 0.75);
-    padding: 35px 25px;
-    border: 1px solid var(--muted-gold);
-    border-radius: 8px;
-    max-width: 650px;
-}
-
-.reservation-hero h1 {
+.reservation h1 {
     font-family: var(--font-header);
     font-size: 35pt;
     color: var(--bone);
     margin-bottom: 15px;
 }
 
-.reservation-hero p {
+.reservation p {
     font-family: var(--font-body);
     font-size: 14pt;
     color: var(--text-bone);
     margin-bottom: 25px;
 }
 
-.hero-button {
-    display: inline-block;
-    text-decoration: none;
-    font-family: var(--font-body);
-    width: 140px;
-    padding: 10px 20px;
-    background-color: var(--muted-gold);
-    color: var(--obsidian);
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14pt;
-    font-weight: 700;
-}
-
-.hero-button:hover {
-    background-color: var(--ember);
-    color: var(--bone);
-}
 
 /* ----------ADDRESS---------- */
 
