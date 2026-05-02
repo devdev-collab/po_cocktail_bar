@@ -144,6 +144,13 @@ header {
     scroll-snap-align: center;
     box-shadow: 0 0 20px rgba(200, 91, 41, 0.7);
     border: 1px solid var(--oxblood);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover .cocktail-card,
+.cocktail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(200, 91, 41, 0.9);
 }
 
 .card-img-1 {
