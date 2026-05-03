@@ -280,29 +280,7 @@ footer {
 /* ----------MEDIA QUERIES---------- */
 
 @media screen and (min-width: 600px) {
-    .address-wrapper {
-        text-align: center;
-    }
-
-        #address-content {
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .address-wrapper a {
-            grid-column: 2;
-            grid-row: 2;
-        }
-
-        .booking-form {
-            justify-content: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    .address-content {
-        text-align: center;
-    }
-
+    
     .seating-grid {
         grid-template-columns: repeat(2, 1fr);
     }
