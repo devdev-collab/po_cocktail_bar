@@ -121,13 +121,16 @@ header {
     width: 140px;
     padding: 10px 20px;
     background-color: var(--muted-gold);
-    color: var(--obsidian);
-    text-decoration: none;
-    border-radius: 5px;
     font-size: 14pt;
     font-weight: 700;
     grid-row: 2;
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
+}
+
+.address-button a {
+    color: var(--obsidian);
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .address-button a:hover {
