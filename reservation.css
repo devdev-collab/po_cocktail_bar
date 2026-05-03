@@ -145,7 +145,11 @@ header {
 
 .booking {
     padding: 50px 20px;
-    background-color: var(--obsidian);
+    background:
+        linear-gradient(rgba(10, 7, 17, 0.88), rgba(10, 7, 17, 0.88)),
+        url("images/Asset 1.png");
+    background-repeat: repeat;
+    background-size: 600px;
     text-align: center;
 }
 
