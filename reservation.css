@@ -49,8 +49,12 @@ header {
 
 .address {
     padding: 50px 0px;
+    background:
+        linear-gradient(rgba(10, 7, 17, 0.88), rgba(10, 7, 17, 0.88)),
+        url("images/Asset 1.png");
     background-repeat: repeat;
     background-size: 600px;
+    
 }
 
 .address-wrapper {
