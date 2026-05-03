@@ -101,19 +101,22 @@ header {
     z-index: 1;
 }
 
+.address-content {
+    text-align: center;
+    width: 300px;
+    justify-self: flex-end;
+    padding: 10px 20px;
+}
+
 .address-content h2 {
     font-family: var(--font-header);
     font-size: 27pt;
     color: var(--bone);
-    margin-bottom: 10px;
-    grid-column: 3 / 5;
 }
 
 .address-content p {
     font-family: var(--font-body);
     font-size: 12pt;
-    margin-bottom: 20px;
-    grid-column: 3 / 5;
 }
 
 .address-button {
