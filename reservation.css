@@ -92,7 +92,7 @@ header {
     z-index: 2
 }
 
-.address-content {
+.address-box {
     background-color: var(--oxblood);
     padding: 30px;
     border-radius: 8px;
